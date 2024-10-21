@@ -1,0 +1,4 @@
+ZZ-99-ZZ,ligeiro,Seat,Ibiza,Zé Carlos,2020
+VV-13-VV,pesado,Scania,Super,Maria Silva,2018
+1,ligeiro,Red Bull Racing,RB20,Max Verstappen,2024
+AA-01-01,motociclo,Casal,Boss,Ti Manel,1975
