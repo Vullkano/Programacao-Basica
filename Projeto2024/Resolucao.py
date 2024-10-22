@@ -4,6 +4,13 @@
 
 class Vehicle:
     def __init__(self, matricula: str, tipo: str, marca: str, modelo: str, proprietario: str, ano: int):
+        assert type(matricula) == str
+        assert type(tipo) == str and (tipo == "Ligeiro" or tipo == "Pesado" or tipo == "Motociclo")
+        assert type(marca) == str
+        assert type(modelo) == str
+        assert type(proprietario) == str
+        assert type(ano) == int
+
         self.__matricula = matricula
         self.__tipo = tipo
         self.__marca = marca
@@ -41,17 +48,121 @@ class Vehicle:
     def __eq__(self, other):
         return isinstance(other, Vehicle) and other.matricula == self.matricula
 
-V1 = Vehicle('1', '1', '1', '1', '1', 2020)
+
+V1 = Vehicle('AB-23-RF', 'Ligeiro', 'BMW', 'e330', 'Nuno', 2020)
+V2 = Vehicle('XY-45-UV', 'Motociclo', 'Ford', 'Transit', 'Ana', 2019)
+V3 = Vehicle('CD-67-WX', 'Pesado', 'Mercedes', 'Actros', 'Carlos', 2021)
+
 
 # =========== T2: Leitura do registo de veículos =========== #
+# TODO -> só leitura do ficheiro?; não é preciso adicionar veiculos novos?
 
-def limpar_concluidas_para_iscte(self):
-    f = open('historico.csv', 'a')
-    mammamia = []
-    for i in self.__lista_voltar_para_ISCTE_viagem:
-        if not i.ativa:
-            f.write(str(i) + '\n')
-            mammamia.append(i)
-    for i in mammamia:
-        self.__lista_voltar_para_ISCTE_viagem.remove(i)
-    f.close()
+def armazernarVeiculo(ficheiro: str = 'VeiculosGuardados.txt') -> dict:
+    x = {}
+    y = 0
+    with open(ficheiro, 'r', encoding='utf-8') as file:
+        leitura = file.read()
+        linhas = leitura.splitlines()
+        for linha in linhas:
+            x[f'V{y}'] = {
+                'matricula': linha.split(',')[0],
+                'tipo': linha.split(',')[1],
+                'marca': linha.split(',')[2],
+                'modelo': linha.split(',')[3],
+                'proprietario': linha.split(',')[4],
+                'ano': linha.split(',')[5]
+            }
+            y += 1
+    return x
+
+
+# ============== T3: Classe Parque ( Park ) ============== #
+# TODO -> O parque é suposto possuir uma lista base para guardar os veiculos, não era melhor referir?
+
+class Park:
+    def __init__(self, nome: str, localizacao: tuple[float, float], lotacao: int, privado: bool):
+        assert type(nome) == str
+        assert type(localizacao) == tuple and len(localizacao) == 2 and -90 <= localizacao[0] <= 90 and -180 <= \
+               localizacao[1] <= 180
+        assert type(lotacao) == int
+        assert type(privado) == bool
+
+        self.__nome = nome
+        self.__localizacao = localizacao
+        self.__lotacao = lotacao
+        self.__privado = privado
+
+        self.__listaVeiculos = []
+
+        # Somente cria a lista VIP se for privado
+        if self.__privado:
+            self.__listaVIP = []
+
+    @property
+    def nome(self):
+        return self.__nome
+
+    @property
+    def localizacao(self):
+        return self.__localizacao
+
+    @property
+    def lotacao(self):
+        return self.__lotacao
+
+    @property
+    def privado(self):
+        return self.__privado
+
+    # Lista VIP acessível somente se o parque for privado
+    @property
+    def listaVIP(self):
+        if self.__privado:
+            return self.__listaVIP
+        return None
+
+    def addVeiculo(self, veiculo: 'Vehicle'):
+        assert isinstance(veiculo, Vehicle)
+        if self.__lotacao > len(self.__listaVeiculos):
+            if self.__privado:
+                if veiculo in self.__listaVIP and veiculo not in self.__listaVeiculos:
+                    self.__listaVeiculos.append(veiculo)
+                else:
+                    print(f"Veículo {veiculo.matricula} não está autorizado a entrar no parque VIP.")
+            else:
+                if veiculo not in self.__listaVeiculos:
+                    self.__listaVeiculos.append(veiculo)
+                else:
+                    print(f"O veículo {veiculo.matricula} já se encontra no parque de estacionamento.")
+        else:
+            print(f"O parque está cheio, o veículo {veiculo.matricula} não pode entrar.")
+
+    def removeVeiculo(self, veiculo: 'Vehicle'):
+        assert isinstance(veiculo, Vehicle)
+        if veiculo in self.__listaVeiculos:
+            self.__listaVeiculos.remove(veiculo)
+        else:
+            print(f"O veículo {veiculo.matricula} não se encontra no parque.")
+
+    def inPark(self, veiculo: 'Vehicle'):
+        assert isinstance(veiculo, Vehicle)
+        return veiculo in self.__listaVeiculos
+
+    def seeAllVeiculos(self):
+        if len(self.__listaVeiculos) == 0:
+            print("O parque está vazio")
+        else:
+            for i in self.__listaVeiculos:
+                print(i)
+
+    def lugaresOcupados(self):
+        return len(self.__listaVeiculos)
+
+    def lugaresDisponiveis(self):
+        return self.__lotacao - self.lugaresOcupados()
+
+    def __str__(self):
+        return f"{self.nome} ({self.localizacao[0]}, {self.localizacao[1]}) {self.lugaresOcupados()}/{self.lotacao}"
+
+
+P = Park('Parque do ISCTE',(38.7478, -9.1534), 380, False)
