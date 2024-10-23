@@ -94,7 +94,7 @@ class Park:
 
         self.__listaVeiculos = []
 
-        # Somente cria a lista VIP se for privado
+        # Somente cria a lista VIP se o parque for privado
         if self.__privado:
             self.__listaVIP = []
 
@@ -165,4 +165,58 @@ class Park:
         return f"{self.nome} ({self.localizacao[0]}, {self.localizacao[1]}) {self.lugaresOcupados()}/{self.lotacao}"
 
 
-P = Park('Parque do ISCTE',(38.7478, -9.1534), 380, False)
+P1 = Park('Parque do ISCTE',(38.7478, -9.1534), 380, False)
+P2 = Park('Parque da Cidade', (38.7499, -9.1550), 50000, True)
+P3 = Park('Parque Eduardo VII', (38.7275, -9.1519), 260000, True)
+P4 = Park('Parque das Nações', (38.7660, -9.0983), 200000, True)
+P5 = Park('Jardim Botânico', (38.7131, -9.1517), 30000, False)
+P6 = Park('Parque Nacional da Peneda-Gerês', (41.7191, -8.1575), 730000, True)
+
+lista_parques = [P1, P2, P3, P4, P5, P6]
+
+# ================ T4: Gestão de parques ================ #
+
+def menu():
+    # Cores ANSI
+    RESET = "\033[0m"
+    BOLD = "\033[1m"
+    RED = "\033[31m"
+    GREEN = "\033[32m"
+    YELLOW = "\033[33m"
+    BLUE = "\033[34m"
+    MAGENTA = "\033[35m"
+    CYAN = "\033[36m"
+
+    menuOptions = (
+        f"{BOLD}{GREEN}1.{RESET} Listar parques\n"
+        f"{BOLD}{BLUE}2.{RESET} Gerir parque\n"
+        f"{BOLD}{YELLOW}3.{RESET} Criar parque\n"
+        f"{BOLD}{MAGENTA}4.{RESET} Remover parque\n"
+        f"{BOLD}{CYAN}5.{RESET} Estatísticas e informações\n"
+        f"{BOLD}{RED}0.{RESET} Sair"
+    )
+
+    print(menuOptions)
+    value = int(input("Insira a opção pretendida"))
+    while value != 0:
+        match value:
+            case 1:
+                j = 1
+                if j <= len(lista_parques):
+                    for i in lista_parques:
+                        print(f"{BOLD}{j}{RESET}. {i}")
+                        j += 1
+                    z = int(input("Escolha o parque que pretende pelo respetivo número"))
+                    while z < 0 or z > len(lista_parques):
+                        z = int(input("Valor incorreto! selecione o respetivo número do parque"))
+                    parque_selecionado = lista_parques[z - 1]
+                    print(f"Parque selecionado: {parque_selecionado.nome}\n")
+                else:
+                    print("Não existem parques no sistema")
+
+            case 2:
+                print("vitoria")
+
+
+        print(menuOptions)
+        value = int(input("Insira a opção pretendida"))
