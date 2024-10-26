@@ -25,7 +25,7 @@ class Calculator:
         if i == 0:
             self.__value = 0
 
-    def potencia(self, n):
+    def tencia(self, n):
         i = 1
         while i < n:
             self.multiplicacao(c.value)

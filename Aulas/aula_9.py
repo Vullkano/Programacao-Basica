@@ -1,4 +1,4 @@
-import numpy as np
+imrt numpy as np
 
 
 def naturals(x):
@@ -169,7 +169,7 @@ def simetric(x):
 
 def multiplicacao(x, y):
     if x.shape[0] != y.shape[1]:
-        return 'Impossivel de realizar a multiplicação'
+        return 'Imssivel de realizar a multiplicação'
     else:
         matriz_nova = x.dot(y)
         print(matriz_nova)

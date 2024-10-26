@@ -1,9 +1,11 @@
 ## ParkGest ##
 
 # Imports
-from Vehicle import *
-from Park import *
-from MenuT5 import *
+from T1_Vehicle import *
+from T3_Park import *
+from T5_ParkManagement import *
+from T6_StatsInfo import *
+import sys
 
 # Cores ANSI
 RESET = "\033[0m"
@@ -30,29 +32,31 @@ def menu():
     )
 
     print(menuOptionsT4)
-    value = int(input("Insira a opção pretendida"))
+    value = int(input("Insira a opção pretendida: "))
     while value != 0:
         match value:
             case 1:
                 j = 1
                 if j <= len(lista_parques):
+                    print(f"\n{BOLD}# == Parques da Base de dados == #{RESET}\n")
                     for i in lista_parques:
                         print(f"{BOLD}{j}{RESET}. {i}")
                         j += 1
                 else:
                     print("Não existem parques no sistema")
 
+                print("\n")
             case 2:
                 # ================ T5: Gestão de um parque ================ #
                 parqueEscolhido = False
                 j = 1
                 if j <= len(lista_parques):
-                    print(f"{BOLD}Escolha o nome parque que pretende gerir:{RESET}\n")
+                    print(f"Escolha o {BOLD}nome{RESET} parque que pretende gerir:\n")
                     for i in lista_parques:
                         print(f"{j}. {BOLD}{i.nome}{RESET}")
                         j += 1
 
-                    nome = input("Insira o nome do parque: ")
+                    nome = input(f"Insira o {BOLD}nome{RESET} do parque: ")
                     for i in lista_parques:
                         if i.nome == nome:
                             parqueEscolhido = i
@@ -94,7 +98,7 @@ def menu():
                     capacidade = int(input("Insira a capacidade do parque: "))
                 except ValueError:
                     print("Capacidade inválida.")
-                    break
+                    sys.exit()
 
                 # Selecionar a privacidade
                 print("O parque é privado ?")
@@ -117,13 +121,14 @@ def menu():
                         print(f"{BOLD}{j}{RESET}. {i}")
                         j += 1
 
-                    print(f"\nSelecione o {BOLD}Nome{RESET} do parque que pretende eliminar.\n")
-                    ParkApagar = input("Nome:")
+                    print(f"\nSelecione o {BOLD}Nome{RESET} do parque que pretende eliminar.")
+                    ParkApagar = input("Nome: ")
                     for i in range(len(lista_parques)):
                         if ParkApagar == lista_parques[i].nome:
-                            lista_parques.pop(i)
-                        else:
-                            print("Não existe um parque com esse nome.")
+                            lista_parques.remove(lista_parques[i])
+                            break
+                        if i == len(lista_parques) - 1:
+                            raise ValueError("Não existe um parque com esse nome.")
 
                 else:
                     print("Não existem parques no sistema")
@@ -131,7 +136,7 @@ def menu():
             case 5:
                 # ============== T6: Estatísticas e informações ============== #
 
-                print("vitoria")
+                menuT6()
 
                 # ============ Fim de T6: Estatísticas e informações ============ #
 
@@ -139,5 +144,5 @@ def menu():
         value = int(input("Insira a opção pretendida"))
 
 if __name__ == "__main__":
-    lista_parques = [P1, P2, P3, P4, P5, P6]
+    print("\n")
     menu()
