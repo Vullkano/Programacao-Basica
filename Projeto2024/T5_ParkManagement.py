@@ -4,6 +4,17 @@ from T3_Park import *
 
 from T4_MainMenu import *
 
+# Cores ANSI
+RESET = "\033[0m"
+BOLD = "\033[1m"
+RED = "\033[31m"
+GREEN = "\033[32m"
+YELLOW = "\033[33m"
+BLUE = "\033[34m"
+MAGENTA = "\033[35m"
+CYAN = "\033[36m"
+WHITE = "\033[37m"
+
 # Funções complementares
 def CreateVehicle(VeiculoEscolhido):
     VeiculoCriado = Vehicle(
@@ -75,7 +86,7 @@ def menuT5(parqueGerir: Park):
 
                 # Segunda condição
                 if parqueGerir.privado:
-                    if VeiculoEscolhido not in parqueGerir.listaVeiculos:
+                    if VeiculoEscolhido.matricula not in parqueGerir.listaVIP:
                         raise ValueError("O veículo não tem permissão para entrar no parque.")
 
                 print(f"Foi adicionado o veiculo correspondente à matrícula {VeiculoEscolhido.matricula}\n")
@@ -108,6 +119,9 @@ def menuT5(parqueGerir: Park):
             case 4:
                 print(f"\n{BOLD}Insira o nome do ficheiro{RESET}")
                 nomeFicheiro = input("Nome do ficheiro: ")
+
+                if not nomeFicheiro.endswith('.txt'):
+                    nomeFicheiro += '.txt'
 
                 with open(nomeFicheiro, 'w', encoding='utf-8') as file:
                     # Escrever as caracteristicas do parque

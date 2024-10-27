@@ -110,16 +110,16 @@ class Park:
         return f"{self.nome} ({self.localizacao[0]}, {self.localizacao[1]}) {self.lugaresOcupados()}/{self.lotacao}"
 
 # Criar os parques
-P1 = Park('Parque do ISCTE',(38.7478, -9.1534), 380, False)
-P2 = Park('Parque Central', (random.uniform(-90, 90), random.uniform(-180, 180)), 15, False)
-P3 = Park('Parque do Rio', (random.uniform(-90, 90), random.uniform(-180, 180)), 20, False)
-P4 = Park('Parque do Estádio', (random.uniform(-90, 90), random.uniform(-180, 180)), 25, True)
-P5 = Park('Parque do Museu', (random.uniform(-90, 90), random.uniform(-180, 180)), 30, True)
-P6 = Park('Parque do Bairro', (random.uniform(-90, 90), random.uniform(-180, 180)), 10, False)
-P7 = Park('Parque da Colina', (random.uniform(-90, 90), random.uniform(-180, 180)), 12, False)
-P8 = Park('Parque da Avenida', (random.uniform(-90, 90), random.uniform(-180, 180)), 8, False)
-P9 = Park('Parque Privado do Centro', (random.uniform(-90, 90), random.uniform(-180, 180)), 5, True)
-P10 = Park('Parque do Jardim', (random.uniform(-90, 90), random.uniform(-180, 180)), 20, False)
+P1 = Park('Parque do ISCTE',(38.7478, -9.1534), 190, False)
+P2 = Park('Parque Central', (random.uniform(-90, 90), random.uniform(-180, 180)), 75, False)
+P3 = Park('Parque do Rio', (random.uniform(-90, 90), random.uniform(-180, 180)), 100, False)
+P4 = Park('Parque do Estádio', (random.uniform(-90, 90), random.uniform(-180, 180)), 125, True)
+P5 = Park('Parque do Museu', (random.uniform(-90, 90), random.uniform(-180, 180)), 150, True)
+P6 = Park('Parque do Bairro', (random.uniform(-90, 90), random.uniform(-180, 180)), 50, False)
+P7 = Park('Parque da Colina', (random.uniform(-90, 90), random.uniform(-180, 180)), 60, False)
+P8 = Park('Parque da Avenida', (random.uniform(-90, 90), random.uniform(-180, 180)), 40, False)
+P9 = Park('Parque Privado do Centro', (random.uniform(-90, 90), random.uniform(-180, 180)), 25, True)
+P10 = Park('Parque do Jardim', (random.uniform(-90, 90), random.uniform(-180, 180)), 100, False)
 
 # Lista dos parques que vão estar no menu
 lista_parques = [P1, P2, P3, P4, P5, P6, P7, P8, P9, P10] # TODO é para criar uma lista que contem todos os parques?

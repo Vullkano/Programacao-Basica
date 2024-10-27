@@ -76,7 +76,9 @@ def menuT6():
                         privado += 1
                 print(f"\n Percentagem de parques privados -> {BOLD}{round((privado/len(lista_parques))*100,2)}%{RESET}\n")
 
-            case 4: # TODO não devias ser um barplot?
+            case 4: # TODO não devias ser um barplot? E é suposto ser só de motociclos e ligeiros?
+
+                print("\n")
 
                 # Contagem de veículos
                 ligeiros = 0
@@ -115,7 +117,11 @@ def menuT6():
                 plt.tight_layout()  # Ajustar o layout
                 plt.show(block=False)
 
+                print("\n")
+
             case 5:
+
+                print("\n")
 
                 # Criar uma figura e um eixo
                 fig, ax = plt.subplots(figsize=(10, 8))  # Tamanho da figura
@@ -144,8 +150,7 @@ def menuT6():
 
                 # Adicionar os círculos ao gráfico
                 for c in circles:
-                    circle = plt.Circle(c['position'], c['radius'], color=c['color'], alpha=0.6,
-                                        edgecolor='black')  # Adicionado edgecolor
+                    circle = plt.Circle(c['position'], c['radius'], color=c['color'], alpha=0.6)
                     ax.add_patch(circle)
 
                 # Ajustar layout para evitar sobreposição
@@ -153,6 +158,8 @@ def menuT6():
 
                 # Mostrar o gráfico
                 plt.show(block=False)
+
+                print("\n")
 
         print(menuOptionsT5)
         value = int(input("Insira a opção pretendida: "))

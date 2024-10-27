@@ -20,7 +20,7 @@ WHITE = "\033[37m"
 
 # ================ T4: Gestão de parques ================ #
 
-def menu():
+def menu(lista_parques: list[Park] = lista_parques):
 
     menuOptionsT4 = (
         f"{BOLD}{GREEN}1.{RESET} Listar parques\n"
@@ -145,4 +145,4 @@ def menu():
 
 if __name__ == "__main__":
     print("\n")
-    menu()
+    menu(lista_parques)
