@@ -2,9 +2,10 @@
 
 from T3_Park import *
 from T5_ParkManagement import *
+import matplotlib.pyplot as plt
+
 from T4_MainMenu import *
 
-import matplotlib.pyplot as plt
 # Cores ANSI
 RESET = "\033[0m"
 BOLD = "\033[1m"
@@ -64,16 +65,16 @@ def menuT6():
                 AllOcupados = 0
                 AllLotacao = 0
                 for i in lista_parques:
-                    print(f"{BOLD}{i.nome}{RESET}: {i.lugaresOcupados() / i.lotacao}")
+                    print(f"{i.nome}: {BOLD}{round(i.lugaresOcupados() / i.lotacao*100,2)}%{RESET}")
                     AllOcupados += i.lugaresOcupados()
                     AllLotacao += i.lotacao
-                print(f"\n A taxa de ocupação média geral é -> {BOLD}{AllOcupados/AllLotacao}%{RESET}\n")
+                print(f"\n A taxa de ocupação média geral é -> {BOLD}{round((AllOcupados/AllLotacao)*100,2)}%{RESET}\n")
             case 3:
                 privado = 0
                 for i in lista_parques:
                     if i.privado:
                         privado += 1
-                print(f"\n Percentagem de parques privados -> {BOLD}{privado/len(lista_parques)}%{RESET}\n")
+                print(f"\n Percentagem de parques privados -> {BOLD}{round((privado/len(lista_parques))*100,2)}%{RESET}\n")
 
             case 4: # TODO não devias ser um barplot?
 
