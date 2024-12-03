@@ -6,6 +6,8 @@ from T3_Park import *
 from T5_ParkManagement import *
 from T6_StatsInfo import *
 import sys
+import os
+from time import sleep
 
 # Cores ANSI
 RESET = "\033[0m"
@@ -18,131 +20,164 @@ MAGENTA = "\033[35m"
 CYAN = "\033[36m"
 WHITE = "\033[37m"
 
-# ================ T4: Gestão de parques ================ #
+# Estilos adicionais
+UNDERLINE = "\033[4m"
+BG_BLUE = "\033[44m"
+BG_GREEN = "\033[42m"
+BG_RED = "\033[41m"
+BRIGHT_WHITE = "\033[97m"
+
+def clear_screen():
+    """Limpa o ecrã do terminal."""
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+def print_header():
+    """Imprime o cabeçalho do programa."""
+    clear_screen()
+    print(f"""
+{BG_BLUE}{BRIGHT_WHITE}{'═' * 60}{RESET}
+{BG_BLUE}{BRIGHT_WHITE}║{' ' * 24}PARKGEST v1.0{' ' * 24}║{RESET}
+{BG_BLUE}{BRIGHT_WHITE}{'═' * 60}{RESET}
+""")
+
+def print_footer():
+    """Imprime o rodapé do menu."""
+    print(f"\n{BOLD}{'═' * 60}{RESET}")
+    print(f"{CYAN}Desenvolvido por [Diogo Freitas] © 2024{RESET}")
+
+def print_menu_options():
+    """Imprime as opções do menu principal."""
+    print(f"\n{BOLD}{UNDERLINE}Menu Principal:{RESET}\n")
+    options = [
+        (f"{GREEN}1", "Listar parques"),
+        (f"{BLUE}2", "Gerir parque"),
+        (f"{YELLOW}3", "Criar parque"),
+        (f"{MAGENTA}4", "Remover parque"),
+        (f"{CYAN}5", "Estatísticas e informações"),
+        (f"{RED}0", "Sair")
+    ]
+    
+    for num, desc in options:
+        print(f"  {BOLD}{num}{RESET} │ {desc}{RESET}")
+
+def loading_animation(message="A processar"):
+    """Mostra uma animação de carregamento."""
+    for _ in range(3):
+        for char in '⠋⠙⠹⠸⠼⠴⠦⠧⠇⠏':
+            print(f'\r{message} {char}', end='')
+            sleep(0.1)
+    print()
 
 def menu(lista_parques: list[Park] = lista_parques):
+    while True:
+        print_header()
+        print_menu_options()
+        print_footer()
 
-    menuOptionsT4 = (
-        f"{BOLD}{GREEN}1.{RESET} Listar parques\n"
-        f"{BOLD}{BLUE}2.{RESET} Gerir parque\n"
-        f"{BOLD}{YELLOW}3.{RESET} Criar parque\n"
-        f"{BOLD}{MAGENTA}4.{RESET} Remover parque\n"
-        f"{BOLD}{CYAN}5.{RESET} Estatísticas e informações\n"
-        f"{BOLD}{RED}0.{RESET} Sair"
-    )
+        try:
+            value = input(f"\n{BOLD}Digite sua opção ➜ {RESET}")
+            if not value.isdigit():
+                raise ValueError("Por favor, insira um número válido.")
+            value = int(value)
 
-    print(menuOptionsT4)
-    value = int(input("Insira a opção pretendida: "))
-    while value != 0:
-        match value:
-            case 1:
-                j = 1
-                if j <= len(lista_parques):
-                    print(f"\n{BOLD}# == Parques da Base de dados == #{RESET}\n")
-                    for i in lista_parques:
-                        print(f"{BOLD}{j}{RESET}. {i}")
-                        j += 1
-                else:
-                    print("Não existem parques no sistema")
+            if value == 0:
+                clear_screen()
+                print(f"\n{GREEN}Obrigado por usar o ParkGest!{RESET}")
+                print(f"{BOLD}A encerrar...{RESET}")
+                sleep(1)
+                break
 
-                print("\n")
-            case 2:
-                # ================ T5: Gestão de um parque ================ #
-                parqueEscolhido = False
-                j = 1
-                if j <= len(lista_parques):
-                    print(f"Escolha o {BOLD}nome{RESET} parque que pretende gerir:\n")
-                    for i in lista_parques:
-                        print(f"{j}. {BOLD}{i.nome}{RESET}")
-                        j += 1
+            clear_screen()
+            loading_animation()
 
-                    nome = input(f"Insira o {BOLD}nome{RESET} do parque: ")
-                    for i in lista_parques:
-                        if i.nome == nome:
-                            parqueEscolhido = i
-                    if not parqueEscolhido:
-                        raise ValueError("Não existe um parque com esse nome.")
+            match value:
+                case 1:
+                    print(f"\n{BG_GREEN}{BRIGHT_WHITE} LISTA DE PARQUES {RESET}\n")
+                    if lista_parques:
+                        for i, parque in enumerate(lista_parques, 1):
+                            print(f"{BOLD}{i}.{RESET} {parque}")
+                    else:
+                        print(f"{RED}Não existem parques no sistema{RESET}")
 
-                    menuT5(parqueEscolhido)
+                case 2:
+                    print(f"\n{BG_BLUE}{BRIGHT_WHITE} GESTÃO DE PARQUE {RESET}\n")
+                    if not lista_parques:
+                        print(f"{RED}Não existem parques no sistema{RESET}")
+                        continue
 
-                else:
-                    print("Não existem parques no sistema")
+                    print(f"Escolha o {BOLD}nome{RESET} do parque que pretende gerir:\n")
+                    for i, parque in enumerate(lista_parques, 1):
+                        print(f"{i}. {BOLD}{parque.nome}{RESET}")
 
-                # ============= Fim de T5: Gestão de um parque ============= #
+                    nome = input(f"\nNome do parque ➜ {RESET}")
+                    parque_escolhido = next((p for p in lista_parques if p.nome == nome), None)
+                    
+                    if not parque_escolhido:
+                        print(f"\n{RED}Erro: Parque não encontrado.{RESET}")
+                        sleep(2)
+                        continue
 
-            case 3:
-                print("Porfavor, responda as questões seguintes sobre o parque")
+                    menuT5(parque_escolhido)
 
-                # Selecionar o nome
-                NameStop = [i.nome for i in lista_parques]
-                nome = input("Insira o nome do parque: ")
-                if nome in NameStop:
-                    raise ValueError(f"Já existe um parque com esse nome.")
+                case 3:
+                    print(f"\n{BG_GREEN}{BRIGHT_WHITE} CRIAR PARQUE {RESET}\n")
+                    nome = input(f"{BOLD}Nome do parque:{RESET} ")
+                    
+                    try:
+                        lotacao = int(input(f"{BOLD}Lotação:{RESET} "))
+                        if lotacao <= 0:
+                            raise ValueError("A lotação deve ser maior que zero.")
+                    except ValueError as e:
+                        print(f"\n{RED}Erro: {str(e)}{RESET}")
+                        continue
+                    
+                    try:
+                        lat = float(input(f"{BOLD}Latitude:{RESET} "))
+                        lon = float(input(f"{BOLD}Longitude:{RESET} "))
+                    except ValueError:
+                        print(f"\n{RED}Erro: Coordenadas inválidas.{RESET}")
+                        continue
 
-                # Selecionar a localização
-                localizacaoStop = [i.localizacao for i in lista_parques]
-                latitude = float(input("Insira a latitude do parque: "))
-                if abs(latitude) > 90:
-                    raise ValueError(f"Coordenadas inválidas.")
+                    privado = input(f"{BOLD}Privado (s/n):{RESET} ").lower() == 's'
+                    
+                    novo_parque = Park(nome, lotacao, (lat, lon), privado)
+                    lista_parques.append(novo_parque)
+                    print(f"\n{GREEN}Parque criado com sucesso!{RESET}")
 
-                longitude = float(input("Insira a longitude do parque: "))
-                if abs(longitude) > 180:
-                    raise ValueError(f"Coordenadas inválidas.")
+                case 4:
+                    print(f"\n{BG_RED}{BRIGHT_WHITE} REMOVER PARQUE {RESET}\n")
+                    if not lista_parques:
+                        print(f"{RED}Não existem parques no sistema{RESET}")
+                        continue
 
-                localizacaoPark = (latitude, longitude)
-                if localizacaoPark in localizacaoStop:
-                    raise ValueError(f"Coordenadas inválidas.")
+                    print("Parques disponíveis:\n")
+                    for i, parque in enumerate(lista_parques, 1):
+                        print(f"{BOLD}{i}.{RESET} {parque.nome}")
 
-                # Selecionar a capacidade
-                try:
-                    capacidade = int(input("Insira a capacidade do parque: "))
-                except ValueError:
-                    print("Capacidade inválida.")
-                    sys.exit()
+                    try:
+                        nome = input(f"\n{BOLD}Nome do parque a remover:{RESET} ")
+                        parque_remover = next((p for p in lista_parques if p.nome == nome), None)
+                        
+                        if not parque_remover:
+                            print(f"\n{RED}Erro: Parque não encontrado.{RESET}")
+                            continue
 
-                # Selecionar a privacidade
-                print("O parque é privado ?")
-                print(
-                    f"{BOLD}{RED}0.{RESET} Não\n"
-                    f"{BOLD}{GREEN}1.{RESET} Sim"
-                )
-                VIP = input("Opção:")
-                if VIP != "1" and VIP != "0":
-                    raise ValueError("Opção inválida.")
-                VIP = bool(VIP)
+                        lista_parques.remove(parque_remover)
+                        print(f"\n{GREEN}Parque removido com sucesso!{RESET}")
+                    except Exception as e:
+                        print(f"\n{RED}Erro ao remover parque: {str(e)}{RESET}")
 
-                lista_parques.append(Park(nome,localizacaoPark, capacidade, VIP))
-                print(f"\n{BOLD}{GREEN}Parque Criado Com Sucesso!{RESET}\n")
+                case 5:
+                    menuT6()
 
-            case 4:
-                j = 1
-                if j <= len(lista_parques):
-                    for i in lista_parques:
-                        print(f"{BOLD}{j}{RESET}. {i}")
-                        j += 1
+        except ValueError as e:
+            print(f"\n{RED}Erro: {str(e)}{RESET}")
+            sleep(2)
+        except Exception as e:
+            print(f"\n{RED}Erro inesperado: {str(e)}{RESET}")
+            sleep(2)
 
-                    print(f"\nSelecione o {BOLD}Nome{RESET} do parque que pretende eliminar.")
-                    ParkApagar = input("Nome: ")
-                    for i in range(len(lista_parques)):
-                        if ParkApagar == lista_parques[i].nome:
-                            lista_parques.remove(lista_parques[i])
-                            break
-                        if i == len(lista_parques) - 1:
-                            raise ValueError("Não existe um parque com esse nome.")
-
-                else:
-                    print("Não existem parques no sistema")
-
-            case 5:
-                # ============== T6: Estatísticas e informações ============== #
-
-                menuT6()
-
-                # ============ Fim de T6: Estatísticas e informações ============ #
-
-        print(menuOptionsT4)
-        value = int(input("Insira a opção pretendida"))
+        input(f"\n{BOLD}Pressione ENTER para continuar...{RESET}")
 
 if __name__ == "__main__":
-    print("\n")
     menu(lista_parques)

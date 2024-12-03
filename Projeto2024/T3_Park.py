@@ -5,6 +5,15 @@ import random
 # TODO -> O parque é suposto possuir uma lista base para guardar os veiculos, não era melhor referir?
 
 class Park:
+    """
+    Classe que representa um parque de estacionamento.
+    
+    Attributes:
+        nome (str): Nome do parque
+        localizacao (tuple): Coordenadas (latitude, longitude)
+        lotacao (int): Número máximo de lugares
+        privado (bool): Se é um parque privado ou público
+    """
     def __init__(self, nome: str, localizacao: tuple[float, float], lotacao: int, privado: bool):
         assert type(nome) == str
         assert type(localizacao) == tuple and len(localizacao) == 2 and -90 <= localizacao[0] <= 90 and -180 <= \
@@ -17,12 +26,12 @@ class Park:
         self.__lotacao = lotacao
         self.__privado = privado
 
-        self.__listaVeiculos = [] # TODO esta lista é suposto ter os objeto Vehicle?
+        self.__listaVeiculos: list[Vehicle] = [] # TODO esta lista é suposto ter os objeto Vehicle?
 
         # Somente cria a lista VIP se o parque for privado
         # A lista VIP apenas possui as matriculas
         if self.__privado:
-            self.__listaVIP = [] # TODO esta lista é suposto ter só as matriculas?
+            self.__listaVIP: list[str] = [] # TODO esta lista é suposto ter só as matriculas?
 
     @property
     def nome(self):
@@ -62,24 +71,30 @@ class Park:
         return None
 
     def addVeiculo(self, veiculo: 'Vehicle'):
-        assert isinstance(veiculo, Vehicle)
-        if self.__lotacao > len(self.__listaVeiculos):
-            if veiculo.tipo != 'Pesado': # TODO não era melhor referir logo que não se pode estacionar veiculos pesados?
-                if self.__privado:
-                    if veiculo.matricula in self.__listaVIP and veiculo not in self.__listaVeiculos:
-                        self.__listaVeiculos.append(veiculo)
-                        print(f"\nO veículo {veiculo.matricula} foi adicionado parque.\n")
-                    else:
-                        raise ValueError(f"O Veículo {veiculo.matricula} não tem permissão para entrar no parque.")
-                else:
-                    if veiculo not in self.__listaVeiculos:
-                        self.__listaVeiculos.append(veiculo)
-                    else:
-                        raise ValueError(f"O veículo {veiculo.matricula} já se encontra no parque de estacionamento.")
-            else:
-                raise ValueError("Não são permitidos veículos pesados.")
-        else:
-            raise ValueError(f"O parque está cheio")
+        """
+        Adiciona um veículo ao parque se houver espaço e respeitar as regras.
+        
+        Raises:
+            ValueError: Se o parque estiver cheio, veículo for pesado,
+                      não tiver permissão VIP (em parques privados) ou já estiver estacionado
+        """
+        if not isinstance(veiculo, Vehicle):
+            raise TypeError("O objeto deve ser do tipo Vehicle")
+            
+        if veiculo.tipo == 'Pesado':
+            raise ValueError("Não são permitidos veículos pesados neste parque")
+            
+        if len(self.__listaVeiculos) >= self.__lotacao:
+            raise ValueError(f"O parque {self.nome} está cheio")
+            
+        if veiculo in self.__listaVeiculos:
+            raise ValueError(f"O veículo {veiculo.matricula} já está estacionado neste parque")
+            
+        if self.__privado and veiculo.matricula not in self.__listaVIP:
+            raise ValueError(f"O veículo {veiculo.matricula} não tem permissão VIP para este parque")
+            
+        self.__listaVeiculos.append(veiculo)
+        return True
 
     def removeVeiculo(self, veiculo: 'Vehicle'):
         assert isinstance(veiculo, Vehicle)

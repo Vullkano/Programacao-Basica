@@ -1,442 +1,331 @@
-ZZ-99-ZZ,ligeiro,Seat,Ibiza,Zé Carlos,2020
-VV-13-VV,pesado,Scania,Super,Maria Silva,2018
-1,ligeiro,Red Bull Racing,RB20,Max Verstappen,2024
-AA-01-01,motociclo,Casal,Boss,Ti Manel,1975
-ZZ-45-ZZ,ligeiro,Seat,Ibiza,Zé Carlos,2020
-VV-98-VV,pesado,Scania,Super,Maria Silva,2018
-AA-67-34,motociclo,Casal,Boss,Ti Manel,1975
+AA-99-ZZ,ligeiro,Seat,Ibiza,Zé Carlos,2020
+BB-13-VV,pesado,Scania,Super,Maria Silva,2018
+00-AA-01,ligeiro,Red Bull Racing,RB20,Max Verstappen,2024
+AA-01-BB,motociclo,Casal,Boss,Ti Manel,1975
+CC-45-ZZ,ligeiro,Seat,Ibiza,Zé Carlos,2020
+DD-98-VV,pesado,Scania,Super,Maria Silva,2018
+AA-67-CC,motociclo,Casal,Boss,Ti Manel,1975
 ZZ-12-AB,ligeiro,Ford,Focus,Zé,2021
 VV-34-CD,pesado,Mercedes,Actros,Ana,2019
-AA-56-78,motociclo,Honda,CBR,Pedro,2020
-ZZ-23-XY,ligeiro,BMW,320i,Carlos,2022
-VV-11-ZZ,pesado,Scania,R 620,Rita,2017
-AA-99-WX,motociclo,Yamaha,YZF,Max,2023
-ZZ-78-LM,ligeiro,Audi,A4,Luis,2015
-VV-56-QW,pesado,Volvo,FH16,João,2016
-AA-88-90,motociclo,Kawasaki,Ninja,Ana,2018
-ZZ-35-AB,ligeiro,Toyota,Corolla,Tiago,2022
-VV-67-CD,pesado,Mack,Granite,Maria,2020
-AA-45-67,motociclo,Suzuki,GSX,Daniel,2021
-ZZ-87-JK,ligeiro,Volkswagen,Golf,Rita,2019
-VV-99-LM,pesado,Freightliner,Cascadia,Carlos,2018
-AA-12-QW,motociclo,Ducati,Panigale,José,2024
-ZZ-50-PL,ligeiro,Peugeot,208,Zé,2020
-VV-20-RT,pesado,MAN,TGS,Ana,2019
-AA-67-89,motociclo,Triumph,Bobber,Ti Manel,2021
-ZZ-02-XY,ligeiro,Nissan,Micra,Pedro,2023
-VV-76-UV,pesado,Kenworth,T680,Maria Silva,2020
-AA-44-11,motociclo,Honda,Goldwing,Carlos,2022
-ZZ-38-FG,ligeiro,Fiat,Punto,Zé,2017
-VV-89-ZX,pesado,Renault,T460,Rita,2018
-AA-99-22,motociclo,BMW,R1200,Max,2020
-ZZ-12-YZ,ligeiro,Hyundai,i30,Ana,2021
-VV-23-WE,pesado,Hino,500,Maria,2016
-AA-56-78,motociclo,KTM,Duke,Pedro,2022
-ZZ-10-QR,ligeiro,Mazda,3,Zé Carlos,2019
-VV-87-MN,pesado,Isuzu,NPR,Maria Silva,2017
-AA-66-44,motociclo,Husqvarna,701,Ti Manel,2020
-ZZ-19-TY,ligeiro,Buick,Enclave,Zé,2022
-VV-65-JK,pesado,Peterbilt,579,Ana,2023
-AA-54-33,motociclo,Benelli,502,José,2021
-ZZ-24-FD,ligeiro,Suzuki,Swift,Pedro,2018
-VV-91-ZX,pesado,Tata,Superace,Rita,2016
-AA-41-21,motociclo,BMW,G310,Max,2020
-ZZ-77-XY,ligeiro,Opel,Astra,Zé,2021
-VV-31-RE,pesado,International,ProStar,Ana,2019
-AA-88-55,motociclo,Honda,Shadow,Ti Manel,2022
-ZZ-01-QW,ligeiro,Chrysler,300,Carlos,2022
-VV-11-AB,pesado,Freightliner,Coronado,Rita,2017
-AA-02-90,motociclo,Yamaha,R1,José,2023
-ZZ-35-RT,ligeiro,Mitsubishi,Lancer,Zé,2020
-VV-06-GH,pesado,Peugeot,Bipper,Ana,2018
-AA-20-39,motociclo,Ducati,Multristrada,Pedro,2022
-ZZ-60-VB,ligeiro,Suzuki,SX4,Zé Carlos,2019
-VV-84-FR,pesado,Mack,CH,Ti Manel,2016
-AA-43-88,motociclo,Kawasaki,Z900,Max,2020
-ZZ-55-XY,ligeiro,Citroën,C4,Zé,2022
-VV-95-BC,pesado,DAF,CF,Maria Silva,2018
-AA-99-ZZ,motociclo,BMW,S1000RR,José,2021
-ZZ-70-KJ,ligeiro,Subaru,Impreza,Carlos,2023
-VV-47-TY,pesado,Kenworth,W900,Rita,2019
-AA-66-99,motociclo,Yamaha,FZ,Pedro,2020
-ZZ-22-WE,ligeiro,Rover,75,Zé,2021
-VV-83-XZ,pesado,Mercedes,Actros,Ana,2018
-AA-14-76,motociclo,KTM,390,Ti Manel,2022
-ZZ-88-PQ,ligeiro,Chrysler,PT Cruiser,Zé,2017
-VV-52-JK,pesado,Nissan,UD,Maria Silva,2019
-AA-99-WQ,motociclo,Benelli,Leoncino,Max,2023
-ZZ-65-QW,ligeiro,Jaguar,XF,Carlos,2021
-VV-49-LO,pesado,Toyota,Coaster,Ana,2016
-AA-42-77,motociclo,Suzuki,Hayabusa,Pedro,2020
-ZZ-73-XY,ligeiro,Fiat,Panda,Zé,2022
-VV-33-PY,pesado,Volvo,FH,Maria Silva,2018
-AA-14-25,motociclo,Kawasaki,Versys,Ti Manel,2021
-ZZ-57-GH,ligeiro,Volkswagen,Polo,Zé,2020
-VV-19-MN,pesado,Isuzu,Giga,Max,2017
-AA-88-XC,motociclo,Honda,Rebel,José,2023
-ZZ-43-NV,ligeiro,Mazda,MX-5,Ana,2021
-VV-92-WE,pesado,Mack,MRU,Pedro,2018
-AA-75-KL,motociclo,Honda,CB500X,Carlos,2020
-ZZ-90-AB,ligeiro,Toyota,Yaris,Ana,2023
-VV-15-CD,pesado,Scania,R 450,Carlos,2019
-AA-20-30,motociclo,Honda,CRF,Ti Manel,2020
-ZZ-33-XX,ligeiro,Mazda,2,Zé,2021
-VV-21-ZX,pesado,Mercedes,Atego,Maria Silva,2017
-AA-50-12,motociclo,Suzuki,V-Strom,José,2023
-ZZ-05-GH,ligeiro,Hyundai,i20,Rita,2022
-VV-99-AB,pesado,MAN,TGX,Ana,2018
-AA-22-44,motociclo,Kawasaki,Ninja ZX-10R,Carlos,2020
-ZZ-11-QR,ligeiro,Ford,Fiesta,Zé Carlos,2021
-VV-81-KL,pesado,Volvo,FM,Maria,2019
-AA-60-78,motociclo,Yamaha,R3,Max,2023
-ZZ-30-OP,ligeiro,Peugeot,308,Zé,2022
-VV-77-QW,pesado,DAF,LF,Maria Silva,2017
-AA-42-11,motociclo,BMW,R1250,Ti Manel,2020
-ZZ-66-JK,ligeiro,Renault,Clio,Ana,2023
-VV-55-RX,pesado,Scania,R 580,Carlos,2019
-AA-99-88,motociclo,Honda,Goldwing,Zé,2022
-ZZ-14-ZX,ligeiro,Kia,Ceed,Rita,2021
-VV-72-BN,pesado,Iveco,Eurocargo,Maria,2018
-AA-24-56,motociclo,KTM,690 Enduro,José,2023
-ZZ-81-XY,ligeiro,Seat,Leon,Ana,2022
-VV-44-DV,pesado,Ford,Cargo,Carlos,2017
-AA-50-90,motociclo,Yamaha,MT-07,Max,2020
-ZZ-92-WV,ligeiro,Audi,A6,Zé,2021
-VV-39-RE,pesado,MAN,TGM,Maria Silva,2019
-AA-11-99,motociclo,Kawasaki,Z1000,Zé,2022
-ZZ-58-JU,ligeiro,Fiat,500,Rita,2020
-VV-11-MB,pesado,Freightliner,Century,Ana,2018
-AA-44-55,motociclo,Honda,CX500,Ti Manel,2022
-ZZ-99-QW,ligeiro,Chevrolet,Cruze,Zé,2021
-VV-60-XC,pesado,Nissan,UD,Maria,2016
-AA-90-KJ,motociclo,Suzuki,Bandit,José,2023
-ZZ-12-PQ,ligeiro,Renault,Twingo,Rita,2021
-AA-15-90,motociclo,Ducati,Multristrada,Carlos,2020
-ZZ-22-ZZ,ligeiro,BMW,3 Series,Zé Carlos,2022
-VV-17-JJ,pesado,Scania,R 440,Maria,2016
-AA-09-34,motociclo,Yamaha,YZF R1,Max,2023
-ZZ-88-LL,ligeiro,Subaru,Legacy,Zé,2021
-VV-72-PH,pesado,Volvo,FMX,Ana,2019
-AA-67-89,motociclo,Honda,NC750X,Ti Manel,2020
-ZZ-01-XY,ligeiro,Kia,Sportage,Rita,2022
-VV-22-MB,pesado,Isuzu,Elf,Carlos,2018
-AA-30-40,motociclo,Ducati,Panigale V4,José,2023
-ZZ-06-AB,ligeiro,Ford,Ecosport,Zé,2021
-VV-77-RX,pesado,Nissan,NT,Maria Silva,2019
-AA-44-55,motociclo,Kawasaki,Versys,Pedro,2022
-ZZ-10-QR,ligeiro,Chevrolet,Tracker,Zé Carlos,2020
-VV-83-MJ,pesado,Mercedes,Atego,Ana,2018
-AA-25-30,motociclo,Honda,CBR650R,Max,2023
-ZZ-78-VB,ligeiro,Mazda,6,Rita,2021
-VV-66-NC,pesado,Scania,R 580,Maria,2019
-AA-13-46,motociclo,Yamaha,FZ1,José,2022
-ZZ-11-XY,ligeiro,Peugeot,3008,Zé,2021
-VV-30-RT,pesado,Renault,K Series,Carlos,2018
-AA-44-66,motociclo,Ducati,Monster, António, 2003
-ZZ-23-QR,ligeiro,Toyota,Yaris,Zé,2022
-AA-11-22,motociclo,Yamaha,R1,Ti Manel,2023
-ZZ-24-ST,ligeiro,Honda,Civic,Rita,2021
-AA-33-44,motociclo,Kawasaki,Versys,Zé,2020
-ZZ-25-UV,ligeiro,Ford,Fiesta,Carlos,2022
-AA-55-66,motociclo,Honda,CBR600RR,Ana,2023
-ZZ-26-WX,ligeiro,Mazda,3,Zé Carlos,2021
-AA-77-88,motociclo,Suzuki,GSX-R1000,Rita,2020
-ZZ-27-YZ,ligeiro,Peugeot,208,Max,2022
-AA-99-00,motociclo,Ducati,Panigale,Ti Manel,2023
-ZZ-28-AB,ligeiro,Nissan,Micra,Zé,2021
-AA-12-34,motociclo,Yamaha,FZ1,Ana,2020
-ZZ-29-CD,ligeiro,Chevrolet,Tracker,Carlos,2022
-AA-21-43,motociclo,Kawasaki,Ninja,Zé Carlos,2023
-ZZ-30-EF,ligeiro,Hyundai,i20,Rita,2021
-AA-32-54,motociclo,Honda,CB500X,Max,2020
-ZZ-31-GH,ligeiro,Opel,Astra,Zé,2022
-AA-65-87,motociclo,BMW,R1200GS,Ana,2023
-ZZ-32-IJ,ligeiro,Fiat,Panda,Rita,2021
-AA-78-90,motociclo,KTM,Duke,Ti Manel,2020
-ZZ-33-KL,ligeiro,Suzuki,Swift,Carlos,2022
-AA-11-22,motociclo,Ducati,Monster,Max,2023
-ZZ-34-MN,ligeiro,Volkswagen,Golf,Zé,2021
-AA-33-44,motociclo,Yamaha,YZF-R3,Ana,2020
-ZZ-35-OP,ligeiro,Renault,Twingo,Zé Carlos,2022
-AA-55-66,motociclo,Honda,Shadow,Rita,2023
-ZZ-36-QR,ligeiro,Toyota,Corolla,Max,2021
-AA-88-99,motociclo,Kawasaki,Z900,Zé,2020
-ZZ-37-ST,ligeiro,Ford,Focus,Rita,2022
-AA-11-77,motociclo,BMW,G310R,Ana,2023
-ZZ-38-UV,ligeiro,Mazda,2,Carlos,2021
-AA-22-33,motociclo,Yamaha,R3,Ti Manel,2020
-ZZ-39-WX,ligeiro,Skoda,Octavia,Zé,2022
-AA-44-55,motociclo,KTM,390,Ana,2023
-ZZ-40-YZ,ligeiro,Honda,HR-V,Rita,2021
-AA-11-22,motociclo,Suzuki,Bandit,Carlos,2020
-ZZ-41-AB,ligeiro,Peugeot,308,Zé,2022
-AA-33-44,motociclo,Ducati,Scrambler,Ana,2023
-ZZ-42-CD,ligeiro,Nissan,Juke,Max,2021
-AA-55-66,motociclo,Yamaha,FZ6,Zé,2020
-ZZ-43-EF,ligeiro,Chevrolet,Cruze,Rita,2022
-AA-22-11,motociclo,Kawasaki,Ninja ZX-10R,Ti Manel,2023
-ZZ-44-GH,ligeiro,Hyundai,Kona,Zé Carlos,2021
-AA-33-55,motociclo,Honda,CBR1000RR,Ana,2020
-ZZ-45-IJ,ligeiro,Renault,Clio,Zé,2022
-AA-12-34,motociclo,BMW,S1000RR,Rita,2023
-ZZ-46-KL,ligeiro,Volkswagen,Tiguan,Carlos,2021
-AA-99-88,motociclo,Suzuki,Hayabusa,Zé,2020
-ZZ-47-MN,ligeiro,Toyota,RAV4,Rita,2022
-AA-11-22,motociclo,Ducati,Panigale V4,Ti Manel,2023
-ZZ-48-OP,ligeiro,Opel,Corsa,Zé,2021
-AA-33-44,motociclo,Yamaha,MT-07,Ana,2020
-ZZ-49-QR,ligeiro,Ford,Kuga,Zé Carlos,2022
-AA-55-66,motociclo,Kawasaki,Z1000,Rita,2023
-ZZ-50-ST,ligeiro,Mazda,CX-5,Max,2021
-AA-11-22,motociclo,Honda,NC750X,Carlos,2020
-ZZ-51-UV,ligeiro,Peugeot,2008,Zé,2022
-AA-33-44,motociclo,Yamaha,YZF-R125,Rita,2023
-ZZ-52-WX,ligeiro,Chevrolet,Equinox,Zé Carlos,2021
-AA-11-22,motociclo,Ducati,Multistrada,Ana,2020
-ZZ-53-AB,ligeiro,Nissan,Note,Zé,2022
-AA-11-22,motociclo,Kawasaki,ER-6n,Rita,2023
-ZZ-54-CD,ligeiro,Toyota,Auris,Zé Carlos,2021
-AA-22-11,motociclo,Suzuki,SV650,Max,2020
-ZZ-55-EF,ligeiro,Hyundai,iX35,Rita,2022
-AA-11-22,motociclo,Yamaha,R6,Ana,2023
-ZZ-56-GH,ligeiro,Ford,Mondeo,Zé,2021
-ZZ-57-QR,ligeiro,Renault,Mégane,Zé,2022
-ZZ-58-ST,ligeiro,Toyota,Aygo,Ana,2021
-ZZ-59-UV,ligeiro,Peugeot,3008,Carlos,2023
-ZZ-60-WX,ligeiro,Nissan,Leaf,Zé,2020
-ZZ-61-YZ,ligeiro,Mazda,CX-30,Rita,2022
-ZZ-62-AB,ligeiro,Volkswagen,Polo,Zé Carlos,2021
-ZZ-63-CD,ligeiro,Ford,EcoSport,Ana,2023
-ZZ-64-EF,ligeiro,Opel,Mokka,Zé,2020
-ZZ-65-GH,ligeiro,Chevrolet,Malibu,Rita,2022
-ZZ-66-IJ,ligeiro,Hyundai,Elantra,Carlos,2021
-ZZ-67-KL,ligeiro,Suzuki,Vitara,Zé,2023
-ZZ-68-MN,ligeiro,Kia,Ceed,Ana,2020
-ZZ-69-OP,ligeiro,Toyota,C-HR,Zé Carlos,2022
-ZZ-70-QR,ligeiro,Renault,Scenic,Rita,2021
-ZZ-71-ST,ligeiro,Peugeot,508,Carlos,2023
-ZZ-72-UV,ligeiro,Nissan,Qashqai,Zé,2020
-ZZ-73-WX,ligeiro,Mazda,MX-5,Ana,2022
-ZZ-74-YZ,ligeiro,Volkswagen,T-Cross,Zé Carlos,2021
-ZZ-75-AB,ligeiro,Ford,Transit Connect,Carlos,2023
-ZZ-76-CD,ligeiro,Opel,Crossland,Zé,2020
-ZZ-77-EF,ligeiro,Citroën,C4 Cactus,Rita,2022
-ZZ-78-GH,ligeiro,Hyundai,IX20,Zé,2021
-ZZ-79-IJ,ligeiro,Kia,Sportage,Ana,2023
-ZZ-80-KL,ligeiro,Suzuki,Baleno,Zé Carlos,2020
-ZZ-81-MN,ligeiro,Toyota,Corolla Touring Sports,Rita,2022
-ZZ-82-OP,ligeiro,Renault,Zoe,Zé,2021
-ZZ-83-QR,ligeiro,Peugeot,208 Electric,Carlos,2023
-ZZ-84-ST,ligeiro,Nissan,Juke Hybrid,Zé,2020
-ZZ-85-UV,ligeiro,Mazda,2 EV,Ana,2022
-ZZ-86-WX,ligeiro,Volkswagen,id.3,Zé Carlos,2021
-ZZ-87-YZ,ligeiro,Ford,Puma,Carlos,2023
-ZZ-88-AB,ligeiro,Opel,Insignia,Zé,2020
-ZZ-89-CD,ligeiro,Citroën,C5 Aircross,Rita,2022
-ZZ-90-EF,ligeiro,Hyundai,Tucson,Zé,2021
-ZZ-91-GH,ligeiro,Kia,Niro,Ana,2023
-ZZ-92-IJ,ligeiro,Suzuki,Swace,Zé Carlos,2020
-ZZ-93-KL,ligeiro,Toyota,RAV4 Hybrid,Rita,2022
-ZZ-94-MN,ligeiro,Renault,Clio RS,Zé,2021
-ZZ-95-OP,ligeiro,Peugeot,2008 Electric,Carlos,2023
-ZZ-96-QR,ligeiro,Nissan,Ariya,Zé,2020
-ZZ-97-ST,ligeiro,Mazda,3 EV,Ana,2022
-ZZ-98-UV,ligeiro,Volkswagen,Arteon,Zé Carlos,2021
-ZZ-99-WX,ligeiro,Ford,Explorer,Rita,2023
-ZZ-00-YZ,ligeiro,Opel,Grandland,Zé,2020
-ZZ-01-AB,ligeiro,Citroën,C3,Zé,2022
-ZZ-02-CD,ligeiro,Hyundai,Accent,Rita,2021
-ZZ-03-EF,ligeiro,Kia,Rio,Carlos,2023
-ZZ-04-GH,ligeiro,Suzuki,Alto,Zé,2020
-ZZ-05-IJ,ligeiro,Toyota,Yaris Cross,Ana,2022
-ZZ-06-KL,ligeiro,Renault,Fluence,Zé Carlos,2021
-ZZ-07-MN,ligeiro,Peugeot,3008 Hybrid,Zé,2023
-ZZ-08-OP,ligeiro,Nissan,X-Trail,Rita,2020
-ZZ-09-QR,ligeiro,Mazda,6,Carlos,2022
-ZZ-10-ST,ligeiro,Volkswagen,ID.4,Zé,2021
-ZZ-11-UV,ligeiro,Ford,Focus ST,Ana,2023
-ZZ-12-WX,ligeiro,Opel,Astra Electric,Zé Carlos,2020
-ZZ-13-YZ,ligeiro,Citroën,C4 SpaceTourer,Zé,2022
-ZZ-14-AB,ligeiro,Hyundai,Sonata,Rita,2021
-ZZ-15-CD,ligeiro,Kia,Stonic,Carlos,2023
-ZZ-16-EF,ligeiro,Suzuki,S-Cross,Zé,2020
-ZZ-17-XY,motociclo,Yamaha,YZF-R1,Rui,2022
-ZZ-18-ZW,motociclo,Honda,CBR1000RR,Cláudia,2021
-ZZ-19-AB,motociclo,Kawasaki,Ninja H2,Miguel,2023
-ZZ-20-CD,motociclo,Suzuki,GSX-R1000,Fátima,2020
-ZZ-21-EF,motociclo,Ducati,Panigale V4,Ricardo,2022
-ZZ-22-GH,motociclo,BMW,S1000RR,Sofia,2021
-ZZ-23-IJ,motociclo,Triumph,Street Triple,Rui,2023
-ZZ-24-KL,motociclo,Aprilia,RSV4,Teresa,2020
-ZZ-25-MN,motociclo,KTM,RC 390,Ana,2022
-ZZ-26-OP,motociclo,Honda,CB650R,Carlos,2021
-ZZ-27-QR,motociclo,Yamaha,MT-09,Zé,2023
-ZZ-28-ST,motociclo,Kawasaki,Z900,Fátima,2020
-ZZ-29-UV,motociclo,Suzuki,SV650,Ricardo,2022
-ZZ-30-WX,motociclo,Ducati,Multistrada,Cláudia,2021
-ZZ-31-YZ,motociclo,BMW,R1250GS,Miguel,2023
-ZZ-32-AB,motociclo,Triumph,Bobber,Rui,2020
-ZZ-33-CD,motociclo,Aprilia,Tuono V4,Tânia,2022
-ZZ-34-EF,motociclo,KTM,Duke 390,Ana,2021
-ZZ-35-GH,motociclo,Honda,CRF1100L Africa Twin,Carlos,2023
-ZZ-36-IJ,motociclo,Yamaha,XSR900,Fátima,2020
-ZZ-37-KL,motociclo,Kawasaki,H2 SX,Miguel,2022
-ZZ-38-MN,motociclo,Suzuki,GSX-S750,Rui,2021
-ZZ-39-OP,motociclo,Ducati,Diavel 1260,Ricardo,2023
-ZZ-40-QR,motociclo,BMW,K1600GT,Sofia,2020
-ZZ-41-ST,motociclo,Triumph,Tiger 900,Cláudia,2022
-ZZ-42-UV,motociclo,Aprilia,RS660,Ana,2021
-ZZ-43-WX,motociclo,KTM,1290 Super Duke GT,Carlos,2023
-ZZ-44-YZ,motociclo,Honda,CB500F,Zé,2020
-ZZ-45-AB,motociclo,Yamaha,YZF-R3,Fátima,2022
-ZZ-46-CD,motociclo,Kawasaki,Ninja 400,Miguel,2021
-ZZ-47-EF,motociclo,Suzuki,GSX250R,Rui,2023
-ZZ-48-GH,motociclo,Ducati,Scrambler Icon,Ricardo,2020
-ZZ-49-IJ,motociclo,BMW,F850GS,Sofia,2022
-ZZ-50-KL,motociclo,Triumph,Bonneville T120,Cláudia,2021
-ZZ-51-AB,ligeiro,Renault,Clio,Miguel,2021
-ZZ-52-CD,ligeiro,Ford,Fiesta,Fátima,2020
-ZZ-53-EF,motociclo,Yamaha,R3,Rui,2023
-ZZ-54-GH,ligeiro,VW,Golf,Cláudia,2021
-ZZ-55-IJ,motociclo,Honda,CBR600RR,Ricardo,2022
-ZZ-56-KL,ligeiro,Peugeot,208,Zé,2020
-ZZ-57-MN,motociclo,Suzuki,GSX-S750,Ana,2021
-ZZ-58-OP,ligeiro,Toyota,Yaris,Miguel,2022
-ZZ-59-QR,motociclo,Kawasaki,Ninja 650,Fátima,2023
-ZZ-60-ST,ligeiro,Nissan,Micra,Rui,2020
-ZZ-61-UV,motociclo,Ducati,Monster 821,Cláudia,2021
-ZZ-62-WX,ligeiro,Honda,Civic,Ricardo,2022
-ZZ-63-YZ,motociclo,BMW,S1000R,Zé,2020
-ZZ-64-AB,ligeiro,Audi,A3,Fátima,2023
-ZZ-65-CD,motociclo,Yamaha,FZ-09,Rui,2022
-ZZ-66-EF,ligeiro,Ford,Focus,Cláudia,2021
-ZZ-67-GH,motociclo,Honda,CB500X,Ricardo,2020
-ZZ-68-IJ,ligeiro,Mazda,2,Ana,2022
-ZZ-69-KL,motociclo,KTM,890 Duke,Fátima,2023
-ZZ-70-MN,ligeiro,Fiat,Panda,Miguel,2020
-ZZ-71-OP,motociclo,Suzuki,V-Strom 650,Rui,2021
-ZZ-72-QR,ligeiro,Hyundai,i20,Cláudia,2022
-ZZ-73-ST,motociclo,Ducati,Panigale V2,Ricardo,2023
-ZZ-74-UV,ligeiro,Peugeot,308,Zé,2020
-ZZ-75-WX,motociclo,Yamaha,MT-07,Fátima,2021
-ZZ-76-YZ,ligeiro,Nissan,Juke,Rui,2022
-ZZ-77-AB,motociclo,Kawasaki,Z900RS,Cláudia,2023
-ZZ-78-CD,ligeiro,Toyota,Corolla,Ricardo,2020
-ZZ-79-EF,motociclo,Honda,Rebel 500,Ana,2021
-ZZ-80-GH,ligeiro,VW,Polo,Fátima,2022
-ZZ-81-IJ,motociclo,Suzuki,SV650,Rui,2023
-ZZ-82-KL,ligeiro,Renault,Captur,Cláudia,2020
-ZZ-83-MN,motociclo,BMW,G310R,Ricardo,2021
-ZZ-84-OP,ligeiro,Hyundai,i30,Zé,2022
-ZZ-85-QR,motociclo,KTM,390 Duke,Fátima,2023
-ZZ-86-ST,ligeiro,Peugeot,3008,Rui,2020
-ZZ-87-UV,motociclo,Ducati,Multistrada 950,Cláudia,2021
-ZZ-88-WX,ligeiro,Ford,Kuga,Ricardo,2022
-ZZ-89-YZ,motociclo,Yamaha,YZF-R125,Ana,2023
-ZZ-90-AB,ligeiro,Honda,HR-V,Fátima,2020
-ZZ-91-CD,motociclo,Honda,Gold Wing,Rui,2021
-ZZ-92-EF,ligeiro,Toyota,RAV4,Cláudia,2022
-ZZ-93-GH,motociclo,Suzuki,Boulevard M109R,Ricardo,2023
-ZZ-94-IJ,ligeiro,VW,Tiguan,Zé,2020
-ZZ-95-KL,motociclo,Kawasaki,Vulcan S,Fátima,2021
-ZZ-96-MN,ligeiro,Fiat,Tipo,Rui,2022
-ZZ-97-OP,motociclo,Yamaha,T-Max 560,Cláudia,2023
-ZZ-98-QR,ligeiro,Nissan,Qashqai,Ricardo,2020
-ZZ-99-ST,motociclo,Ducati,Diavel 1260,Ana,2021
-ZZ-100-UV,ligeiro,Mazda,3,Fátima,2022
-ZZ-101-WX,motociclo,BMW,K1600GTL,Rui,2023
-ZZ-102-YZ,ligeiro,Peugeot,508,Cláudia,2020
-ZZ-103-AB,motociclo,Honda,CBR250RR,Ricardo,2021
-ZZ-104-CD,ligeiro,Toyota,Land Cruiser,Zé,2022
-ZZ-105-EF,motociclo,Suzuki,GSX-R750,Ana,2023
-ZZ-106-GH,ligeiro,Ford,C-MAX,Fátima,2020
-ZZ-107-IJ,motociclo,Yamaha,Tracer 900,Rui,2021
-ZZ-108-KL,ligeiro,Nissan,Leaf,Cláudia,2022
-ZZ-109-MN,motociclo,Kawasaki,Ninja ZX-10R,Ricardo,2023
-ZZ-110-OP,ligeiro,Honda,Civic Type R,Zé,2020
-ZZ-111-QR,motociclo,Ducati,Streetfighter V4,Fátima,2021
-ZZ-112-ST,ligeiro,VW,Arteon,Rui,2022
-ZZ-113-UV,motociclo,BMW,F850GS,Cláudia,2023
-ZZ-114-WX,ligeiro,Peugeot,2008,Ricardo,2020
-ZZ-115-YZ,motociclo,Honda,CB1100,Ana,2021
-ZZ-116-AB,ligeiro,Hyundai,Tucson,Fátima,2022
-ZZ-117-CD,motociclo,Kawasaki,Z125 Pro,Rui,2023
-ZZ-118-EF,ligeiro,Toyota,Aygo,Cláudia,2020
-ZZ-119-GH,motociclo,Suzuki,Bandit 1200,Ricardo,2021
-ZZ-120-IJ,ligeiro,Mazda,MX-5,Zé,2022
-ZZ-121-KL,motociclo,Yamaha,MT-10,Fátima,2023
-ZZ-122-MN,ligeiro,Nissan,Micra,Rui,2020
-ZZ-123-OP,motociclo,Ducati,Monster 1200,Cláudia,2021
-ZZ-124-QR,ligeiro,VW,Passat,Ricardo,2022
-ZZ-125-ST,motociclo,Honda,CRF1000L,Ana,2023
-ZZ-126-UV,ligeiro,Ford,Mondeo,Fátima,2020
-ZZ-127-WX,motociclo,Kawasaki,Versys 650,Rui,2021
-ZZ-128-YZ,ligeiro,Peugeot,5008,Cláudia,2022
-ZZ-129-AB,motociclo,Suzuki,GSX-R600,Ricardo,2023
-ZZ-130-CD,ligeiro,Toyota,Proace,Zé,2020
-ZZ-131-EF,motociclo,Yamaha,XT660Z,Ana,2021
-ZZ-132-GH,ligeiro,Honda,Civic Tourer,Fátima,2022
-ZZ-133-IJ,motociclo,Ducati,Scrambler Desert Sled,Rui,2023
-ZZ-134-KL,ligeiro,Nissan,Navara,Cláudia,2020
-ZZ-135-MN,motociclo,BMW,K1600B,Ricardo,2021
-ZZ-136-OP,ligeiro,VW,Sharan,Zé,2022
-ZZ-137-QR,motociclo,Kawasaki,Ninja 400,Fátima,2023
-ZZ-138-ST,ligeiro,Hyundai,Veloster,Rui,2020
-ZZ-139-UV,motociclo,Yamaha,YZF-R6,Cláudia,2021
-ZZ-140-WX,ligeiro,Peugeot,3008,Ricardo,2022
-ZZ-141-YZ,motociclo,Ducati,Streetfighter V2,Ana,2023
-ZZ-142-AB,ligeiro,Toyota,Hilux,Fátima,2020
-ZZ-143-CD,motociclo,Honda,CB1000R,Rui,2021
-ZZ-144-EF,ligeiro,Ford,B-MAX,Cláudia,2022
-ZZ-145-GH,motociclo,Suzuki,Boulevard C50,Ricardo,2023
-ZZ-146-IJ,ligeiro,Nissan,370Z,Zé,2020
-ZZ-147-KL,motociclo,Kawasaki,Versys 1000,Fátima,2021
-ZZ-148-MN,ligeiro,Mazda,CX-5,Rui,2022
-ZZ-149-OP,motociclo,Yamaha,MT-125,Cláudia,2023
-ZZ-150-QR,ligeiro,Toyota,Avensis,Ricardo,2020
-ZZ-151-ST,motociclo,Ducati,Monster 797,Ana,2021
-ZZ-152-UV,ligeiro,Peugeot,508 SW,Fátima,2022
-ZZ-153-WX,motociclo,BMW,G310GS,Rui,2023
-ZZ-154-YZ,ligeiro,Ford,Fiesta ST,Cláudia,2020
-ZZ-155-AB,motociclo,Kawasaki,KLX250,Ricardo,2021
-ZZ-156-CD,ligeiro,Honda,CR-V,Zé,2022
-ZZ-157-EF,motociclo,Suzuki,GSX-S1000,Fátima,2023
-ZZ-158-GH,ligeiro,Toyota,CH-R,Rui,2020
-ZZ-159-IJ,motociclo,Yamaha,MT-09 Tracer,Cláudia,2021
-ZZ-161-MN,motociclo,Ducati,Panigale V4 Speciale,Ricardo,2023
-ZZ-162-OP,ligeiro,Peugeot,208 GTi,Ana,2020
-ZZ-163-QR,motociclo,Honda,CRF250L,Fátima,2021
-ZZ-164-ST,ligeiro,Mazda,3,Fátima,2022
-ZZ-165-UV,motociclo,BMW,R1250R,Rui,2023
-ZZ-166-WX,ligeiro,Toyota,Yaris GR,Cláudia,2020
-ZZ-167-YZ,motociclo,Suzuki,Hayabusa,Ricardo,2021
-ZZ-168-AB,ligeiro,Honda,HR-V,Zé,2022
-ZZ-169-CD,motociclo,Kawasaki,Ninja 1000,Fátima,2023
-ZZ-170-EF,ligeiro,Peugeot,2008,Rui,2020
-ZZ-171-GH,motociclo,Yamaha,YZF-R1,Ricardo,2021
-ZZ-172-IJ,ligeiro,Toyota,C-HR,Cláudia,2022
-ZZ-173-KL,motociclo,Ducati,Monster 821,Rui,2023
-ZZ-175-OP,motociclo,Suzuki,GSX-R750,Ricardo,2021
-ZZ-176-QR,ligeiro,Nissan,Qashqai,Zé,2022
-ZZ-177-ST,motociclo,Honda,CB650F,Fátima,2023
-ZZ-178-UV,ligeiro,Ford,C-Max,Rui,2020
-ZZ-179-WX,motociclo,Kawasaki,Z400,Cláudia,2021
-ZZ-180-YZ,ligeiro,Toyota,Avensis,Ricardo,2022
-ZZ-181-AB,motociclo,Yamaha,MT-10,Fátima,2023
-ZZ-183-EF,motociclo,Ducati,Diavel,Rui,2021
-ZZ-184-GH,ligeiro,Mazda,CX-30,Cláudia,2022
-ZZ-185-IJ,motociclo,Suzuki,Bandit 650,Ricardo,2023
-ZZ-186-KL,ligeiro,Toyota,Hilux,Zé,2020
-ZZ-187-MN,motociclo,Honda,CB500F,Fátima,2021
-ZZ-188-OP,ligeiro,Nissan,370Z,Rui,2022
-ZZ-189-QR,motociclo,Kawasaki,Ninja ZX-6R,Cláudia,2023
-ZZ-192-WX,ligeiro,Peugeot,2008,Rui,2022
-ZZ-193-YZ,motociclo,Honda,Gold Wing,Fátima,2023
-ZZ-194-AB,ligeiro,Toyota,Yaris,Zé,2020
-ZZ-195-CD,motociclo,Kawasaki,Versys 650,Rui,2021
-ZZ-196-EF,ligeiro,Ford,Fiesta,Cláudia,2022
-ZZ-197-GH,motociclo,Suzuki,GSX-S750,Ricardo,2023
-ZZ-198-IJ,ligeiro,Honda,CR-V,Fátima,2020
-ZZ-199-KL,motociclo,Yamaha,YZF-R3,Rui,2021
-ZZ-200-MN,ligeiro,Toyota,Corolla,Cláudia,2022
-FF-45-ER,ligeiro,BUGATTI,VEIRON,Freitas,2010
+AA-56-DD,motociclo,Honda,CBR,Pedro,2020
+ZZ-23-EE,ligeiro,BMW,320i,Carlos,2022
+VV-11-FF,pesado,Scania,R 620,Rita,2017
+AA-99-GG,motociclo,Yamaha,YZF,Max,2023
+ZZ-78-HH,ligeiro,Audi,A4,Luis,2015
+VV-56-II,pesado,Volvo,FH16,João,2016
+AA-88-JJ,motociclo,Kawasaki,Ninja,Ana,2018
+ZZ-35-KK,ligeiro,Toyota,Corolla,Tiago,2022
+VV-67-LL,pesado,Mack,Granite,Maria,2020
+AA-45-MM,motociclo,Suzuki,GSX,Daniel,2021
+ZZ-87-NN,ligeiro,Volkswagen,Golf,Rita,2019
+VV-99-OO,pesado,Freightliner,Cascadia,Carlos,2018
+AA-12-PP,motociclo,Ducati,Panigale,José,2024
+ZZ-50-QQ,ligeiro,Peugeot,208,Zé,2020
+VV-20-RR,pesado,MAN,TGS,Ana,2019
+AA-67-SS,motociclo,Triumph,Bobber,Ti Manel,2021
+ZZ-02-TT,ligeiro,Nissan,Micra,Pedro,2023
+VV-76-UU,pesado,Kenworth,T680,Maria Silva,2020
+AA-44-VV,motociclo,Honda,Goldwing,Carlos,2022
+ZZ-38-XX,ligeiro,Fiat,Punto,Zé,2017
+VV-89-YY,pesado,Renault,T460,Rita,2018
+AA-99-ZZ,motociclo,BMW,R1200,Max,2020
+BB-12-AA,ligeiro,Hyundai,i30,Ana,2021
+CC-23-BB,pesado,Hino,500,Maria,2016
+DD-56-CC,motociclo,KTM,Duke,Pedro,2022
+EE-10-DD,ligeiro,Mazda,3,Zé Carlos,2019
+FF-87-EE,pesado,Isuzu,NPR,Maria Silva,2017
+GG-66-FF,motociclo,Husqvarna,701,Ti Manel,2020
+HH-19-GG,ligeiro,Buick,Enclave,Zé,2022
+II-65-HH,pesado,Peterbilt,579,Ana,2023
+JJ-54-II,motociclo,Benelli,502,José,2021
+KK-24-JJ,ligeiro,Suzuki,Swift,Pedro,2018
+LL-91-KK,pesado,Tata,Superace,Rita,2016
+MM-41-LL,motociclo,BMW,G310,Max,2020
+NN-77-MM,ligeiro,Opel,Astra,Zé,2021
+OO-31-NN,pesado,International,ProStar,Ana,2019
+PP-88-OO,motociclo,Honda,Shadow,Ti Manel,2022
+QQ-01-PP,ligeiro,Chrysler,300,Carlos,2022
+RR-11-QQ,pesado,Freightliner,Coronado,Rita,2017
+SS-02-RR,motociclo,Yamaha,R1,José,2023
+TT-35-SS,ligeiro,Mitsubishi,Lancer,Zé,2020
+UU-06-TT,pesado,Peugeot,Bipper,Ana,2018
+VV-20-UU,motociclo,Ducati,Multristrada,Pedro,2022
+XX-60-VV,ligeiro,Suzuki,SX4,Zé Carlos,2019
+YY-84-XX,pesado,Mack,CH,Ti Manel,2016
+ZZ-43-YY,motociclo,Kawasaki,Z900,Max,2020
+AA-55-ZZ,ligeiro,Citroën,C4,Zé,2022
+BB-95-AA,pesado,DAF,CF,Maria Silva,2018
+CC-99-BB,motociclo,BMW,S1000RR,José,2021
+DD-70-CC,ligeiro,Subaru,Impreza,Carlos,2023
+EE-47-DD,pesado,Kenworth,W900,Rita,2019
+FF-66-EE,motociclo,Yamaha,FZ,Pedro,2020
+GG-22-FF,ligeiro,Rover,75,Zé,2021
+HH-83-GG,pesado,Mercedes,Actros,Ana,2018
+II-14-HH,motociclo,KTM,390,Ti Manel,2022
+JJ-88-II,ligeiro,Chrysler,PT Cruiser,Zé,2017
+KK-52-JJ,pesado,Nissan,UD,Maria Silva,2019
+LL-99-KK,motociclo,Benelli,Leoncino,Max,2023
+MM-65-LL,ligeiro,Jaguar,XF,Carlos,2021
+NN-49-MM,pesado,Toyota,Coaster,Ana,2016
+OO-42-NN,motociclo,Suzuki,Hayabusa,Pedro,2020
+PP-73-OO,ligeiro,Fiat,Panda,Zé,2022
+QQ-33-PP,pesado,Volvo,FH,Maria Silva,2018
+RR-14-QQ,motociclo,Kawasaki,Versys,Ti Manel,2021
+SS-57-RR,ligeiro,Volkswagen,Polo,Zé,2020
+TT-19-SS,pesado,Isuzu,Giga,Max,2017
+UU-88-TT,motociclo,Honda,Rebel,José,2023
+VV-43-UU,ligeiro,Mazda,MX-5,Ana,2021
+XX-92-VV,pesado,Mack,MRU,Pedro,2018
+YY-75-XX,motociclo,Honda,CB500X,Carlos,2020
+ZZ-90-YY,ligeiro,Toyota,Yaris,Ana,2023
+AA-15-ZZ,pesado,Scania,R 450,Carlos,2019
+BB-20-AA,motociclo,Honda,CRF,Ti Manel,2020
+CC-33-BB,ligeiro,Mazda,2,Zé,2021
+DD-21-CC,pesado,Mercedes,Atego,Maria Silva,2017
+EE-50-DD,motociclo,Suzuki,V-Strom,José,2023
+FF-05-EE,ligeiro,Hyundai,i20,Rita,2022
+GG-99-FF,pesado,MAN,TGX,Ana,2018
+HH-22-GG,motociclo,Kawasaki,Ninja ZX-10R,Carlos,2020
+II-11-HH,ligeiro,Ford,Fiesta,Zé Carlos,2021
+JJ-81-II,pesado,Volvo,FM,Maria,2019
+KK-60-JJ,motociclo,Yamaha,R3,Max,2023
+LL-30-KK,ligeiro,Peugeot,308,Zé,2022
+MM-77-LL,pesado,DAF,LF,Maria Silva,2017
+NN-42-MM,motociclo,BMW,R1250,Ti Manel,2020
+OO-66-NN,ligeiro,Renault,Clio,Ana,2023
+PP-55-OO,pesado,Scania,R 580,Carlos,2019
+QQ-99-PP,motociclo,Honda,Goldwing,Zé,2022
+RR-14-QQ,ligeiro,Kia,Ceed,Rita,2021
+SS-72-RR,pesado,Iveco,Eurocargo,Maria,2018
+TT-24-SS,motociclo,KTM,690 Enduro,José,2023
+UU-81-TT,ligeiro,Seat,Leon,Ana,2022
+VV-44-UU,pesado,Ford,Cargo,Carlos,2017
+XX-50-VV,motociclo,Yamaha,MT-07,Max,2020
+YY-92-XX,ligeiro,Audi,A6,Zé,2021
+ZZ-39-YY,pesado,MAN,TGM,Maria Silva,2019
+AA-11-ZZ,motociclo,Kawasaki,Z1000,Zé,2022
+BB-58-AA,ligeiro,Fiat,500,Rita,2020
+CC-11-BB,pesado,Freightliner,Century,Ana,2018
+DD-44-CC,motociclo,Honda,CX500,Ti Manel,2022
+EE-99-DD,ligeiro,Chevrolet,Cruze,Zé,2021
+FF-60-EE,pesado,Nissan,UD,Maria,2016
+GG-90-FF,motociclo,Suzuki,Bandit,José,2023
+HH-12-GG,ligeiro,Renault,Twingo,Rita,2021
+II-15-HH,motociclo,Ducati,Multristrada,Carlos,2020
+JJ-22-II,ligeiro,BMW,3 Series,Zé Carlos,2022
+KK-17-JJ,pesado,Scania,R 440,Maria,2016
+LL-09-KK,motociclo,Yamaha,YZF R1,Max,2023
+MM-88-LL,ligeiro,Subaru,Legacy,Zé,2021
+NN-72-MM,pesado,Volvo,FMX,Ana,2019
+OO-67-NN,motociclo,Honda,NC750X,Ti Manel,2020
+PP-01-OO,ligeiro,Kia,Sportage,Rita,2022
+QQ-22-PP,pesado,Isuzu,Elf,Carlos,2018
+RR-30-QQ,motociclo,Ducati,Panigale V4,José,2023
+SS-06-RR,ligeiro,Ford,Ecosport,Zé,2021
+TT-77-SS,pesado,Nissan,NT,Maria Silva,2019
+UU-44-TT,motociclo,Kawasaki,Versys,Pedro,2022
+VV-10-UU,ligeiro,Chevrolet,Tracker,Zé Carlos,2020
+XX-83-VV,pesado,Mercedes,Atego,Ana,2018
+YY-25-XX,motociclo,Honda,CBR650R,Max,2023
+ZZ-78-YY,ligeiro,Mazda,6,Rita,2021
+AA-66-ZZ,pesado,Scania,R 580,Maria,2019
+BB-13-AA,motociclo,Yamaha,FZ1,José,2022
+CC-11-BB,ligeiro,Peugeot,3008,Zé,2021
+DD-30-CC,pesado,Renault,K Series,Carlos,2018
+EE-44-DD,motociclo,Ducati,Monster,António,2003
+FF-23-EE,ligeiro,Toyota,Yaris,Zé,2022
+GG-11-FF,motociclo,Yamaha,R1,Ti Manel,2023
+HH-24-GG,ligeiro,Honda,Civic,Rita,2021
+II-33-HH,motociclo,Kawasaki,Versys,Zé,2020
+JJ-25-II,ligeiro,Ford,Fiesta,Carlos,2022
+KK-55-JJ,motociclo,Honda,CBR600RR,Ana,2023
+LL-26-KK,ligeiro,Mazda,3,Zé Carlos,2021
+MM-77-LL,motociclo,Suzuki,GSX-R1000,Rita,2020
+NN-27-MM,ligeiro,Peugeot,208,Max,2022
+OO-99-NN,motociclo,Ducati,Panigale,Ti Manel,2023
+PP-28-OO,ligeiro,Nissan,Micra,Zé,2021
+QQ-12-PP,motociclo,Yamaha,FZ1,Ana,2020
+RR-29-QQ,ligeiro,Chevrolet,Tracker,Carlos,2022
+SS-21-RR,motociclo,Kawasaki,Ninja,Zé Carlos,2023
+TT-30-SS,ligeiro,Hyundai,i20,Rita,2021
+UU-32-TT,motociclo,Honda,CB500X,Max,2020
+VV-31-UU,ligeiro,Opel,Astra,Zé,2022
+XX-65-VV,motociclo,BMW,R1200GS,Ana,2023
+YY-32-XX,ligeiro,Fiat,Panda,Rita,2021
+ZZ-78-YY,motociclo,KTM,Duke,Ti Manel,2020
+AA-33-ZZ,ligeiro,Suzuki,Swift,Carlos,2022
+BB-11-AA,motociclo,Ducati,Monster,Max,2023
+CC-34-BB,ligeiro,Volkswagen,Golf,Zé,2021
+DD-33-CC,motociclo,Yamaha,YZF-R3,Ana,2020
+EE-35-DD,ligeiro,Renault,Twingo,Zé Carlos,2022
+FF-55-EE,motociclo,Honda,Shadow,Rita,2023
+GG-36-FF,ligeiro,Toyota,Corolla,Max,2021
+HH-88-GG,motociclo,Kawasaki,Z900,Zé,2020
+II-37-HH,ligeiro,Ford,Focus,Rita,2022
+JJ-11-II,motociclo,BMW,G310R,Ana,2023
+KK-38-JJ,ligeiro,Mazda,2,Carlos,2021
+LL-22-KK,motociclo,Yamaha,R3,Ti Manel,2020
+MM-39-LL,ligeiro,Skoda,Octavia,Zé,2022
+NN-44-MM,motociclo,KTM,390,Ana,2023
+OO-40-NN,ligeiro,Honda,HR-V,Rita,2021
+PP-11-OO,motociclo,Suzuki,Bandit,Carlos,2020
+QQ-41-PP,ligeiro,Peugeot,308,Zé,2022
+RR-33-QQ,motociclo,Ducati,Scrambler,Ana,2023
+SS-42-RR,ligeiro,Nissan,Juke,Max,2021
+TT-55-SS,motociclo,Yamaha,FZ6,Zé,2020
+UU-43-TT,ligeiro,Chevrolet,Cruze,Rita,2022
+VV-22-UU,motociclo,Kawasaki,Ninja ZX-10R,Ti Manel,2023
+XX-44-VV,ligeiro,Hyundai,Kona,Zé Carlos,2021
+YY-33-XX,motociclo,Honda,CBR1000RR,Ana,2020
+ZZ-45-YY,ligeiro,Renault,Clio,Zé,2022
+AA-12-ZZ,motociclo,BMW,S1000RR,Rita,2023
+BB-46-AA,ligeiro,Volkswagen,Tiguan,Carlos,2021
+CC-99-BB,motociclo,Suzuki,Hayabusa,Zé,2020
+DD-47-CC,ligeiro,Toyota,RAV4,Rita,2022
+EE-11-DD,motociclo,Ducati,Panigale V4,Ti Manel,2023
+FF-48-EE,ligeiro,Opel,Corsa,Zé,2021
+GG-33-FF,motociclo,Yamaha,MT-07,Ana,2020
+HH-49-GG,ligeiro,Ford,Kuga,Zé Carlos,2022
+II-55-HH,motociclo,Kawasaki,Z1000,Rita,2023
+JJ-50-II,ligeiro,Mazda,CX-5,Max,2021
+KK-11-JJ,motociclo,Honda,NC750X,Carlos,2020
+LL-51-KK,ligeiro,Peugeot,2008,Zé,2022
+MM-33-LL,motociclo,Yamaha,YZF-R125,Rita,2023
+NN-52-MM,ligeiro,Chevrolet,Equinox,Zé Carlos,2021
+OO-11-NN,motociclo,Ducati,Multistrada,Ana,2020
+PP-53-OO,ligeiro,Nissan,Note,Zé,2022
+QQ-11-PP,motociclo,Kawasaki,ER-6n,Rita,2023
+RR-54-QQ,ligeiro,Toyota,Auris,Zé Carlos,2021
+SS-22-RR,motociclo,Suzuki,SV650,Max,2020
+TT-55-SS,ligeiro,Hyundai,iX35,Rita,2022
+UU-11-TT,motociclo,Yamaha,R6,Ana,2023
+VV-56-UU,ligeiro,Ford,Mondeo,Zé,2021
+XX-57-VV,ligeiro,Renault,Mégane,Zé,2022
+YY-58-XX,ligeiro,Toyota,Aygo,Ana,2021
+ZZ-59-YY,ligeiro,Peugeot,3008,Carlos,2023
+AA-60-ZZ,ligeiro,Nissan,Leaf,Zé,2020
+BB-61-AA,ligeiro,Mazda,CX-30,Rita,2022
+CC-62-BB,ligeiro,Volkswagen,Polo,Zé Carlos,2021
+DD-63-CC,ligeiro,Ford,EcoSport,Ana,2023
+EE-64-DD,ligeiro,Opel,Mokka,Zé,2020
+FF-65-EE,ligeiro,Chevrolet,Malibu,Rita,2022
+GG-66-FF,ligeiro,Hyundai,Elantra,Carlos,2021
+HH-67-GG,ligeiro,Suzuki,Vitara,Zé,2023
+II-68-HH,ligeiro,Kia,Ceed,Ana,2020
+JJ-69-II,ligeiro,Toyota,C-HR,Zé Carlos,2022
+KK-70-JJ,ligeiro,Renault,Scenic,Rita,2021
+LL-71-KK,ligeiro,Peugeot,508,Carlos,2023
+MM-72-LL,ligeiro,Nissan,Qashqai,Zé,2020
+NN-73-MM,ligeiro,Mazda,MX-5,Ana,2022
+OO-74-NN,ligeiro,Volkswagen,T-Cross,Zé Carlos,2021
+PP-75-OO,ligeiro,Ford,Transit Connect,Carlos,2023
+QQ-76-PP,ligeiro,Opel,Crossland,Zé,2020
+RR-77-QQ,ligeiro,Citroën,C4 Cactus,Rita,2022
+SS-78-RR,ligeiro,Hyundai,IX20,Zé,2021
+TT-79-SS,ligeiro,Kia,Sportage,Ana,2023
+UU-80-TT,ligeiro,Suzuki,Baleno,Zé Carlos,2020
+VV-81-UU,ligeiro,Toyota,Corolla Touring Sports,Rita,2022
+XX-82-VV,ligeiro,Renault,Zoe,Zé,2021
+YY-83-XX,ligeiro,Peugeot,208 Electric,Carlos,2023
+ZZ-84-YY,ligeiro,Nissan,Juke Hybrid,Zé,2020
+AA-85-ZZ,ligeiro,Mazda,2 EV,Ana,2022
+BB-86-AA,ligeiro,Volkswagen,id.3,Zé Carlos,2021
+CC-87-BB,ligeiro,Ford,Puma,Carlos,2023
+DD-88-CC,ligeiro,Opel,Insignia,Zé,2020
+EE-89-DD,ligeiro,Citroën,C5 Aircross,Rita,2022
+FF-90-EE,ligeiro,Hyundai,Tucson,Zé,2021
+GG-91-FF,ligeiro,Kia,Niro,Ana,2023
+HH-92-GG,ligeiro,Suzuki,Swace,Zé Carlos,2020
+II-93-HH,ligeiro,Toyota,RAV4 Hybrid,Rita,2022
+JJ-94-II,ligeiro,Renault,Clio RS,Zé,2021
+KK-95-JJ,ligeiro,Peugeot,2008 Electric,Carlos,2023
+LL-96-KK,ligeiro,Nissan,Ariya,Zé,2020
+MM-97-LL,ligeiro,Mazda,3 EV,Ana,2022
+NN-98-MM,ligeiro,Volkswagen,Arteon,Zé Carlos,2021
+OO-99-NN,ligeiro,Ford,Explorer,Rita,2023
+PP-00-OO,ligeiro,Opel,Grandland,Zé,2020
+QQ-01-PP,ligeiro,Citroën,C3,Zé,2022
+RR-02-QQ,ligeiro,Hyundai,Accent,Rita,2021
+SS-03-RR,ligeiro,Kia,Rio,Carlos,2023
+TT-04-SS,ligeiro,Suzuki,Alto,Zé,2020
+UU-05-TT,ligeiro,Toyota,Yaris Cross,Ana,2022
+VV-06-UU,ligeiro,Renault,Fluence,Zé Carlos,2021
+XX-07-VV,ligeiro,Peugeot,3008 Hybrid,Zé,2023
+YY-08-XX,ligeiro,Nissan,X-Trail,Rita,2020
+ZZ-09-YY,ligeiro,Mazda,6,Carlos,2022
+AA-10-ZZ,ligeiro,Volkswagen,ID.4,Zé,2021
+BB-11-AA,ligeiro,Ford,Focus ST,Ana,2023
+CC-12-BB,ligeiro,Opel,Astra Electric,Zé Carlos,2020
+DD-13-CC,ligeiro,Citroën,C4 SpaceTourer,Zé,2022
+EE-14-DD,ligeiro,Hyundai,Sonata,Rita,2021
+FF-15-EE,ligeiro,Kia,Stonic,Carlos,2023
+GG-16-FF,ligeiro,Suzuki,S-Cross,Zé,2020
+HH-17-GG,motociclo,Yamaha,YZF-R1,Rui,2022
+II-18-HH,motociclo,Honda,CBR1000RR,Cláudia,2021
+JJ-19-II,motociclo,Kawasaki,Ninja H2,Miguel,2023
+KK-20-JJ,motociclo,Suzuki,GSX-R1000,Fátima,2020
+LL-21-KK,motociclo,Ducati,Panigale V4,Ricardo,2022
+MM-22-LL,motociclo,BMW,S1000RR,Sofia,2021
+NN-23-MM,motociclo,Triumph,Street Triple,Rui,2023
+OO-24-NN,motociclo,Aprilia,RSV4,Teresa,2020
+PP-25-OO,motociclo,KTM,RC 390,Ana,2022
+QQ-26-PP,motociclo,Honda,CB650R,Carlos,2021
+RR-27-QQ,motociclo,Yamaha,MT-09,Zé,2023
+SS-28-RR,motociclo,Kawasaki,Z900,Fátima,2020
+TT-29-SS,motociclo,Suzuki,SV650,Ricardo,2022
+UU-30-TT,motociclo,Ducati,Multistrada,Cláudia,2021
+VV-31-UU,motociclo,BMW,R1250GS,Miguel,2023
+XX-32-VV,motociclo,Triumph,Bobber,Rui,2020
+YY-33-XX,motociclo,Aprilia,Tuono V4,Tânia,2022
+ZZ-34-YY,motociclo,KTM,Duke 390,Ana,2021
+AA-35-ZZ,motociclo,Honda,CRF1100L Africa Twin,Carlos,2023
+BB-36-AA,motociclo,Yamaha,XSR900,Fátima,2020
+CC-37-BB,motociclo,Kawasaki,H2 SX,Miguel,2022
+DD-38-CC,motociclo,Suzuki,GSX-S750,Rui,2021
+EE-39-DD,motociclo,Ducati,Diavel 1260,Ricardo,2023
+FF-40-EE,motociclo,BMW,K1600GT,Sofia,2020
+GG-41-FF,motociclo,Triumph,Tiger 900,Cláudia,2022
+HH-42-GG,motociclo,Aprilia,RS660,Ana,2021
+II-43-HH,motociclo,KTM,1290 Super Duke GT,Carlos,2023
+JJ-44-II,motociclo,Honda,CB500F,Zé,2020
+KK-45-JJ,motociclo,Yamaha,YZF-R3,Fátima,2022
+LL-46-KK,motociclo,Kawasaki,Ninja 400,Miguel,2021
+MM-47-LL,motociclo,Suzuki,GSX250R,Rui,2023
+NN-48-MM,motociclo,Ducati,Scrambler Icon,Ricardo,2020
+OO-49-NN,motociclo,BMW,F850GS,Sofia,2022
+PP-50-OO,motociclo,Triumph,Bonneville T120,Cláudia,2021
+QQ-51-PP,ligeiro,Renault,Clio,Miguel,2021
+RR-52-QQ,ligeiro,Ford,Fiesta,Fátima,2020
+SS-53-RR,motociclo,Yamaha,R3,Rui,2023
+TT-54-SS,ligeiro,VW,Golf,Cláudia,2021
+UU-55-TT,motociclo,Honda,CBR600RR,Ricardo,2022
+VV-56-UU,ligeiro,Peugeot,208,Zé,2020
+XX-57-VV,motociclo,Suzuki,GSX-S750,Ana,2021
+YY-58-XX,ligeiro,Toyota,Yaris,Miguel,2022
+ZZ-59-YY,motociclo,Kawasaki,Ninja 650,Fátima,2023
+AA-60-ZZ,ligeiro,Nissan,Micra,Rui,2020
+BB-61-AA,motociclo,Ducati,Monster 821,Cláudia,2021
+CC-62-BB,ligeiro,Honda,Civic,Ricardo,2022
+DD-63-CC,motociclo,BMW,S1000R,Zé,2020
+EE-64-DD,motociclo,Suzuki,GSX-R1000,Ana,2021
+FF-65-EE,ligeiro,Volkswagen,Golf,Miguel,2022
+GG-66-FF,motociclo,Kawasaki,Z1000,Fátima,2023
+HH-67-GG,motociclo,Yamaha,MT-09,Rui,2020
+II-68-HH,motociclo,Triumph,Street Triple,Cláudia,2022
+JJ-69-II,motociclo,Aprilia,RS660,Ana,2021
+KK-70-JJ,motociclo,KTM,RC 390,Carlos,2023
+LL-71-KK,motociclo,Honda,CRF1100L Africa Twin,Zé,2020
+MM-72-LL,motociclo,Yamaha,XSR900,Fátima,2022
+NN-73-MM,motociclo,Kawasaki,Z1000,Miguel,2021
+OO-74-NN,motociclo,Suzuki,GSX-S750,Rui,2023
+PP-75-OO,motociclo,Ducati,Diavel 1260,Cláudia,2020
+QQ-76-PP,motociclo,BMW,F850GS,Miguel,2022
+RR-77-QQ,motociclo,Triumph,Bonneville T120,Cláudia,2021
+SS-78-RR,motociclo,Kawasaki,Ninja 400,Ana,2023
+TT-79-SS,motociclo,Suzuki,GSX250R,Zé,2020
+UU-80-TT,motociclo,Ducati,Scrambler Icon,Ricardo,2022
+VV-81-UU,motociclo,BMW,F850GS,Sofia,2021
+XX-82-VV,motociclo,Triumph,Bobber,Rui,2023
+YY-83-XX,motociclo,Aprilia,Tuono V4,Tânia,2020
+ZZ-84-YY,motociclo,KTM,Duke 390,Carlos,2022
+AA-85-ZZ,motociclo,Honda,CRF1100L Africa Twin,Zé,2020

@@ -1,12 +1,11 @@
 # Imports
-
 from T3_Park import *
 from T5_ParkManagement import *
 import matplotlib.pyplot as plt
-
+import seaborn as sns
 from T4_MainMenu import *
 
-# Cores ANSI
+# Cores ANSI e configuração inicial
 RESET = "\033[0m"
 BOLD = "\033[1m"
 RED = "\033[31m"
@@ -17,152 +16,181 @@ MAGENTA = "\033[35m"
 CYAN = "\033[36m"
 WHITE = "\033[37m"
 
-# Funções de apoio
+# Configuração do estilo dos gráficos
+plt.style.use('default')
 
-def filtro_raio(x:int) -> int:
-    if x < 100:
-        return 2
-    if x < 1000:
-        return 5
-    else:
-        return 10
+def filtro_raio(x: int) -> int:
+    if x < 100: return 2
+    if x < 1000: return 5
+    return 10
 
-def filtro_cor(x:float) -> str:
-    if x < 0.75:
-        return 'g'
-    if x < 1:
-        return 'y'
-    else:
-        return 'r'
-
-# ============== T6: Estatísticas e informações ============== #
+def filtro_cor(x: float) -> str:
+    if x < 0.75: return '#2ecc71'     # Verde
+    if x < 1: return '#f1c40f'        # Amarelo
+    return '#e74c3c'                  # Vermelho
 
 def menuT6():
+    while True:
+        print(f"\n{BOLD}╔{'═' * 50}╗{RESET}")
+        print(f"{BOLD}║{' ' * 15}Estatísticas e Informações{' ' * 14}║{RESET}")
+        print(f"{BOLD}╚{'═' * 50}╝{RESET}")
 
-    print("\n")
+        menuOptionsT6 = (
+            f"\n{BOLD}┌{'─' * 40}┐{RESET}\n"
+            f"{BOLD}│{RESET}  {BOLD}{GREEN}1.{RESET} Número total de lugares livres{' ' * 7}{BOLD}│{RESET}\n"
+            f"{BOLD}│{RESET}  {BOLD}{BLUE}2.{RESET} Taxa de ocupação média{' ' * 13}{BOLD}│{RESET}\n"
+            f"{BOLD}│{RESET}  {BOLD}{YELLOW}3.{RESET} Percentagem de parques privados{' ' * 6}{BOLD}│{RESET}\n"
+            f"{BOLD}│{RESET}  {BOLD}{MAGENTA}4.{RESET} Histograma por tipo de veículo{' ' * 6}{BOLD}│{RESET}\n"
+            f"{BOLD}│{RESET}  {BOLD}{CYAN}5.{RESET} Visualizar mapa de parques{' ' * 9}{BOLD}│{RESET}\n"
+            f"{BOLD}│{RESET}  {BOLD}{RED}0.{RESET} Voltar{' ' * 27}{BOLD}│{RESET}\n"
+            f"{BOLD}└{'─' * 40}┘{RESET}"
+        )
 
-    menuOptionsT5 = (
-        f"{BOLD}{GREEN}1.{RESET} Número total de lugares livres\n"
-        f"{BOLD}{BLUE}2.{RESET} Taxa de ocupação média\n"
-        f"{BOLD}{YELLOW}3.{RESET} Percentagem de parques privados\n"
-        f"{BOLD}{MAGENTA}4.{RESET} Histograma por tipo de veículo\n"
-        f"{BOLD}{CYAN}5.{RESET} Visualizar mapa de parques\n"
-        f"{BOLD}{RED}0.{RESET} Voltar"
-    )
+        print(menuOptionsT6)
 
-    print(menuOptionsT5)
+        try:
+            value = int(input(f"\n{BOLD}Insira a opção pretendida:{RESET} "))
 
-    value = int(input("Insira a opção pretendida: "))
-    while value != 0:
-        match value:
-            case 1:
-                SomaLugaresLivres = 0
-                for i in lista_parques:
-                    SomaLugaresLivres += i.lugaresDisponiveis()
-                print(f"\n Existem, no total -> {BOLD}{SomaLugaresLivres}{RESET} lugares livres\n")
-            case 2: # TODO é a tx. ocupacao media de todos, oude cada um individualmente?
-                print(f"\n # === {BOLD}Tx. ocupação média{RESET} === # ")
-                AllOcupados = 0
-                AllLotacao = 0
-                for i in lista_parques:
-                    print(f"{i.nome}: {BOLD}{round(i.lugaresOcupados() / i.lotacao*100,2)}%{RESET}")
-                    AllOcupados += i.lugaresOcupados()
-                    AllLotacao += i.lotacao
-                print(f"\n A taxa de ocupação média geral é -> {BOLD}{round((AllOcupados/AllLotacao)*100,2)}%{RESET}\n")
-            case 3:
-                privado = 0
-                for i in lista_parques:
-                    if i.privado:
-                        privado += 1
-                print(f"\n Percentagem de parques privados -> {BOLD}{round((privado/len(lista_parques))*100,2)}%{RESET}\n")
+            match value:
+                case 0:
+                    print(f"\n{BOLD}A voltar ao menu principal...{RESET}")
+                    return
 
-            case 4: # TODO não devias ser um barplot? E é suposto ser só de motociclos e ligeiros?
+                case 1:
+                    print(f"\n{BOLD}╔{'═' * 40}╗{RESET}")
+                    print(f"{BOLD}║{' ' * 10}Lugares Disponíveis{' ' * 11}║{RESET}")
+                    print(f"{BOLD}╚{'═' * 40}╝{RESET}\n")
 
-                print("\n")
+                    SomaLugaresLivres = sum(p.lugaresDisponiveis() for p in lista_parques)
+                    print(f"{BOLD}Total de lugares livres:{RESET} {GREEN}{SomaLugaresLivres}{RESET}")
 
-                # Contagem de veículos
-                ligeiros = 0
-                motociclos = 0
-                for i in lista_parques:
-                    for j in i.listaVeiculos:
-                        if j.tipo == 'ligeiro':
-                            ligeiros += 1
-                        elif j.tipo == 'motociclo':
-                            motociclos += 1
+                case 2:
+                    print(f"\n{BOLD}╔{'═' * 40}╗{RESET}")
+                    print(f"{BOLD}║{' ' * 10}Taxa de Ocupação{' ' * 12}║{RESET}")
+                    print(f"{BOLD}╚{'═' * 40}╝{RESET}\n")
 
-                # Dados para o gráfico
-                barplot = {
-                    'Ligeiros': ligeiros,
-                    'Motociclos': motociclos,
-                }
+                    for p in lista_parques:
+                        taxa = round(p.lugaresOcupados() / p.lotacao * 100, 2)
+                        cor = GREEN if taxa < 75 else YELLOW if taxa < 90 else RED
+                        print(f"{BOLD}{p.nome}:{RESET} {cor}{taxa}%{RESET}")
 
-                # Configuração do gráfico
-                plt.figure(figsize=(8, 5))  # Tamanho da figura
-                plt.bar(barplot.keys(), barplot.values(), color=['#1f77b4', '#ff7f0e'],
-                        alpha=0.8)  # Cores personalizadas
+                    total_ocupacao = sum(p.lugaresOcupados() for p in lista_parques)
+                    total_lotacao = sum(p.lotacao for p in lista_parques)
+                    taxa_media = round((total_ocupacao/total_lotacao)*100, 2)
+                    
+                    print(f"\n{BOLD}Taxa média global:{RESET} {GREEN if taxa_media < 75 else YELLOW if taxa_media < 90 else RED}{taxa_media}%{RESET}")
 
-                # Adicionando título e rótulos
-                plt.title('Contagem de Veículos por Tipo', fontsize=16, fontweight='bold')
-                plt.xlabel('Tipo de Veículo', fontsize=14)
-                plt.ylabel('Número de Veículos', fontsize=14)
+                case 3:
+                    print(f"\n{BOLD}╔{'═' * 40}╗{RESET}")
+                    print(f"{BOLD}║{' ' * 10}Parques Privados{' ' * 12}║{RESET}")
+                    print(f"{BOLD}╚{'═' * 40}╝{RESET}\n")
 
-                # Adicionando grade
-                plt.grid(axis='y', linestyle='--', alpha=0.7)
+                    privados = sum(1 for p in lista_parques if p.privado)
+                    percentagem = round((privados/len(lista_parques))*100, 2)
+                    print(f"{BOLD}Percentagem de parques privados:{RESET} {BLUE}{percentagem}%{RESET}")
 
-                # Adicionando rótulos nos valores das barras
-                for index, value in enumerate(barplot.values()):
-                    plt.text(index, value, str(value), ha='center', va='bottom', fontsize=12)
+                case 4:
+                    # Contagem de veículos
+                    contagem = {'Ligeiros': 0, 'Motociclos': 0}
+                    for p in lista_parques:
+                        for v in p.listaVeiculos:
+                            if v.tipo == 'ligeiro':
+                                contagem['Ligeiros'] += 1
+                            elif v.tipo == 'motociclo':
+                                contagem['Motociclos'] += 1
 
-                # Mostrar o gráfico
-                plt.tight_layout()  # Ajustar o layout
-                plt.show(block=False)
+                    # Configuração do gráfico
+                    plt.figure(figsize=(10, 6))
+                    cores = ['#3498db', '#e67e22']
+                    
+                    # Criar barplot
+                    ax = sns.barplot(x=list(contagem.keys()), y=list(contagem.values()), palette=cores)
+                    
+                    # Personalização
+                    plt.title('Distribuição de Veículos por Tipo', fontsize=16, pad=20, fontweight='bold')
+                    plt.xlabel('Tipo de Veículo', fontsize=12, labelpad=10)
+                    plt.ylabel('Quantidade', fontsize=12, labelpad=10)
+                    
+                    # Adicionar valores nas barras
+                    for i, v in enumerate(contagem.values()):
+                        ax.text(i, v, str(v), ha='center', va='bottom', fontsize=12, fontweight='bold')
+                    
+                    # Estilo
+                    ax.spines['top'].set_visible(False)
+                    ax.spines['right'].set_visible(False)
+                    plt.grid(axis='y', linestyle='--', alpha=0.7)
+                    
+                    plt.tight_layout()
+                    plt.show(block=False)
 
-                print("\n")
+                case 5:
+                    # Criar figura com fundo estilizado
+                    fig, ax = plt.subplots(figsize=(12, 8), facecolor='#f0f0f0')
+                    ax.set_facecolor('#f8f9fa')
+                    
+                    # Configurar limites e aspecto
+                    ax.set_xlim((-90, 90))
+                    ax.set_ylim((-180, 180))
+                    ax.set_box_aspect(1)
+                    
+                    # Títulos e labels
+                    plt.title('Mapa de Distribuição dos Parques', 
+                            fontsize=18, pad=20, fontweight='bold')
+                    plt.xlabel('Latitude', fontsize=14, labelpad=10)
+                    plt.ylabel('Longitude', fontsize=14, labelpad=10)
+                    
+                    # Grade estilizada
+                    ax.grid(True, linestyle='--', alpha=0.4, color='gray')
+                    
+                    # Criar círculos com efeito de sombra
+                    for p in lista_parques:
+                        # Círculo de sombra
+                        shadow = plt.Circle(p.localizacao, 
+                                         filtro_raio(p.lotacao), 
+                                         color='gray', 
+                                         alpha=0.3, 
+                                         zorder=1)
+                        ax.add_patch(shadow)
+                        
+                        # Círculo principal
+                        circle = plt.Circle(p.localizacao, 
+                                         filtro_raio(p.lotacao),
+                                         color=filtro_cor(p.lugaresOcupados()/p.lotacao),
+                                         alpha=0.6,
+                                         zorder=2)
+                        ax.add_patch(circle)
+                        
+                        # Adicionar rótulo
+                        ax.annotate(p.nome, 
+                                  p.localizacao, 
+                                  fontsize=8,
+                                  ha='center',
+                                  va='center',
+                                  weight='bold')
+                    
+                    # Legenda
+                    legend_elements = [
+                        plt.Line2D([0], [0], marker='o', color='w', 
+                                 markerfacecolor='#2ecc71', label='< 75% Ocupação',
+                                 markersize=10),
+                        plt.Line2D([0], [0], marker='o', color='w',
+                                 markerfacecolor='#f1c40f', label='75-100% Ocupação',
+                                 markersize=10),
+                        plt.Line2D([0], [0], marker='o', color='w',
+                                 markerfacecolor='#e74c3c', label='100% Ocupação',
+                                 markersize=10)
+                    ]
+                    ax.legend(handles=legend_elements, loc='upper right',
+                            bbox_to_anchor=(1.15, 1))
+                    
+                    plt.tight_layout()
+                    plt.show(block=False)
 
-            case 5:
+                case _:
+                    print(f"\n{BOLD}{RED}Erro: Opção inválida{RESET}")
 
-                print("\n")
-
-                # Criar uma figura e um eixo
-                fig, ax = plt.subplots(figsize=(10, 8))  # Tamanho da figura
-                ax.set_xlim((-90, 90))  # Limites do eixo x
-                ax.set_ylim((-180, 180))  # Limites do eixo y
-                ax.set_box_aspect(1)  # Aspecto do gráfico
-
-                # Adicionar título e rótulos
-                ax.set_title('Distribuição dos Parques', fontsize=18, fontweight='bold')
-                ax.set_xlabel('Latitude', fontsize=14)
-                ax.set_ylabel('Longitude', fontsize=14)
-
-                # Adicionar grade
-                ax.grid(True, linestyle='--', alpha=0.7)
-
-                # Criar e adicionar círculos para cada parque
-                circles = []
-                for i in lista_parques:
-                    circles.append(
-                        {
-                            'position': i.localizacao,
-                            'radius': filtro_raio(i.lotacao),
-                            'color': filtro_cor(i.lugaresOcupados() / i.lotacao)
-                        }
-                    )
-
-                # Adicionar os círculos ao gráfico
-                for c in circles:
-                    circle = plt.Circle(c['position'], c['radius'], color=c['color'], alpha=0.6)
-                    ax.add_patch(circle)
-
-                # Ajustar layout para evitar sobreposição
-                plt.tight_layout()
-
-                # Mostrar o gráfico
-                plt.show(block=False)
-
-                print("\n")
-
-        print(menuOptionsT5)
-        value = int(input("Insira a opção pretendida: "))
-    print(f"\n{BOLD}A voltar ao menu principal{RESET}\n")
+        except ValueError:
+            print(f"\n{BOLD}{RED}Erro: Por favor insira um número válido{RESET}")
+            continue
 
 

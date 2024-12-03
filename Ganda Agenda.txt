@@ -1,0 +1,15 @@
+João Silva,912345678,joao.silva@gmail.com
+Maria Costa,913456789,maria.costa@hotmail.com
+Pedro Almeida,914567890,pedro.almeida@yahoo.com
+Ana Ramos,915678901,
+Luís Santos,916789012,luis.santos@outlook.com
+Sofia Ferreira,917890123,sofia.ferreira@gmail.com
+Ricardo Lopes,918901234,
+Carla Nunes,919012345,carla.nunes@gmail.com
+Tiago Moreira,920123456,tiago.moreira@icloud.com
+Helena Cruz,921234567,helena.cruz@gmail.com
+Miguel Fonseca,922345678,miguel.fonseca@gmail.com
+Laura Mendes,923456789,laura.mendes@hotmail.com
+André Pires,924567890,andre.pires@yahoo.com
+Carolina Rocha,925678901,carolina.rocha@outlook.com
+Hugo Martins,926789012,hugo.martins@gmail.com

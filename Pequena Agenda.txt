@@ -1,0 +1,5 @@
+Miguel Fonseca,922345678,miguel.fonseca@gmail.com
+Laura Mendes,923456789,laura.mendes@hotmail.com
+André Pires,924567890,andre.pires@yahoo.com
+Carolina Rocha,925678901,carolina.rocha@outlook.com
+Hugo Martins,926789012,hugo.martins@gmail.com
